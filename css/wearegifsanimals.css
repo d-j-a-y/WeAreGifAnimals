@@ -1,0 +1,251 @@
+
+
+body {
+	background-image: url(../ressources/fond/bg_hublot.jpeg);
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-attachment:fixed; 
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.corner {
+    position: absolute;
+    width: 10px;
+    height: 10px
+}
+.TL {
+    top: 0px;
+    left: 0px
+}
+.TR {
+
+    top: 0px;
+    right: 0px
+}
+.BL {
+    bottom: 0px;
+    left: 0px
+}
+.BR {
+    bottom: 0px;
+    right: 0px
+}
+
+.draggable:hover {
+	cursor: pointer; /* move */
+	
+}
+
+.resizable {  
+
+} 
+
+.resizable:hover {
+
+}
+
+.resizable img {
+	display: block;
+}
+
+.resizeui{	
+	background-image: url(../ressources/ui/poignee-taille.png); 
+	visibility: hidden;
+}
+
+.rotatable {
+	background-image: url(../ressources/ui/poignee-rotato.png);
+	visibility: hidden;
+}
+
+.rotatable:hover{	
+	transform : rotate(45deg);
+}
+
+.duplicatable{
+	background-image: url(../ressources/ui/poignee-duplic.png); 
+	visibility: hidden;
+}
+
+.animemal {
+	position:fixed;
+}
+.animemal img {
+	width: 100%;
+	
+}
+
+#loading{
+z-index:800;
+}
+
+#progress{ 
+width: 300px; 
+margin: auto;
+}
+
+#progress > p{
+text-align: center;
+}
+
+.hidetransition{
+opacity: 0;
+transition: all 2s ease;
+}
+
+progress{ 
+display: inline-block; 
+-moz-box-sizing: border-box; 
+box-sizing: border-box; 
+width: 300px; 
+height: 20px; 
+padding: 3px 3px 2px 3px; 
+background: #333; 
+background: -webkit-linear-gradient(#2d2d2d,#444); 
+background: -moz-linear-gradient(#2d2d2d,#444); 
+background: -o-linear-gradient(#2d2d2d,#444); 
+background: linear-gradient(#2d2d2d,#444); 
+border: 1px solid rgba(0,0,0,.5); 
+border-radius: 15px; 
+box-shadow: 0 1px 0 rgba(255,255,255,.2); 
+}
+
+/* Style de la barre pour Firefox*/ 
+progress::-moz-progress-bar
+{ 
+border-radius:10px; 
+background: #09c; 
+background: -moz-repeating-linear-gradient( 45deg, rgba(255,255,255,.2) 0, rgba(255,255,255,.2) 10px, rgba(255,255,255,0) 10px, rgba(255,255,255,0) 20px ), -moz-linear-gradient( rgba(255,255,255,.1) 50%, rgba(255,255,255,0) 60% ), #09c; background: repeating-linear-gradient( 45deg, rgba(255,255,255,.2) 0, rgba(255,255,255,.2) 10px, rgba(255,255,255,0) 10px, rgba(255,255,255,0) 20px ), linear-gradient( rgba(255,255,255,.1) 50%, rgba(255,255,255,0) 60% ), #09c; background-size: 300px 20px, auto, auto; background-position: -300px 0, top, top; background-position: top right, top, top; box-shadow: 0 1px 0 rgba(255,255,255,.5) inset, 0 -1px 0 rgba(0,0,0,.8) inset, 0 0 2px black; 
+} 
+/* Style de la barre pour Chrome*/ 
+progress::-webkit-progress-value{ /* Code identique mais avec les bons préfixes! */ }
+
+#flipbgdroite{
+
+background-image: url(../ressources/ui/flipbg-right.png);
+background-repeat:no-repeat;
+position: fixed;
+top: 40px;
+right: 40px;
+width: 20px;
+height: 20px;
+
+z-index:800; 
+
+}
+
+#flipbgdroite:hover{
+		right: 35px;
+}
+
+#flipbggauche{
+
+background-image: url(../ressources/ui/flipbg-left.png);
+background-repeat:no-repeat;
+position: fixed;
+top: 40px;
+right: 60px;
+width: 20px;
+height: 20px;
+
+z-index:800; 
+
+}
+#flipbggauche:hover{
+	right: 65px;
+}
+
+#cleanscene{
+background-image: url(../ressources/ui/icon-clean.png);
+background-repeat:no-repeat;
+position: fixed;
+top: 40px;
+left: 40px;
+width: 40px;
+height: 40px;
+
+z-index:800;
+}
+
+#cleanscene:hover{
+background-image: url(../ressources/ui/icon-clean-r.png);	
+
+}
+
+h3
+{
+	font-size : 80%;	
+}
+
+
+div.menuhaut
+{
+	background-color: rgba(240,240,240,0.9);	
+	border: 2px solid black;
+	border-radius: 6px;
+
+	max-height: 70%;
+	padding:1em 5em;
+	margin-right: 25%;
+	
+	overflow: auto;
+
+	display: none;
+	visibility: hidden;
+	
+	position:fixed; 
+	top:2em; 
+	left:5%;
+}
+
+
+a.menuhaut
+{
+	background-color: rgba(120,120,120,0.2);
+
+	margin-left: 2em;
+	padding: 1em;
+	
+	font-weight: bold;
+	font-size: 120%;
+	
+	visibility: hidden;
+}
+
+a.menuhaut:hover + div.menuhaut
+{
+    display: block;
+}
+
+div.menuhaut:hover
+{
+    display: block;
+}
+
+#menubas
+{
+	background-image: url(../ressources/ui/artmobilis.png);
+	background-repeat:no-repeat;
+	background-size: 100%;
+	position: fixed;
+	bottom: 40px;
+	right: 40px;
+	width: 261px;
+	height: 63px;
+
+	z-index:800; 
+}
+
+#menubas:hover
+{
+	background-image: url(../ressources/ui/artmobilis-nb.png);
+}
+
+span.cite
+{
+	vertical-align : top;
+	font-size: 60%;
+}

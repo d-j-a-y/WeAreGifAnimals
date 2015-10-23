@@ -1,0 +1,48 @@
+var sceneSoundBank =     [
+      './ressources/son/aliciasnake.mp3', // 00
+      './ressources/son/baptiste.mp3',	// 01
+      './ressources/son/carmen.mp3',	// 02
+      './ressources/son/chamonkey.mp3',// 03
+      './ressources/son/tania.mp3',		// 04
+      './ressources/son/dragonfly.mp3',// 05
+      './ressources/son/abel-cafard.mp3',// 06
+      './ressources/son/adam_c-crocodile.mp3',// 07
+      './ressources/son/adam_p-ours.mp3',// 08
+      './ressources/son/lylou-panda.mp3',// 09
+      './ressources/son/milo-canard.mp3',// 10
+      './ressources/son/oceane-sirene.mp3',// 11
+      './ressources/son/pablo-cigale.mp3',// 12
+      './ressources/son/wallid-manchot.mp3',    // 13
+      './ressources/son/anis-corbeau.mp3', 	//14
+      './ressources/son/renda-leopard.mp3',	//15
+      './ressources/son/halima-gazelle.mp3',	//16
+      './ressources/son/falou-loup.mp3',	//17
+      './ressources/son/jordy-chien.mp3',	//18
+      './ressources/son/eddy-kangourou.mp3',	//19
+      './ressources/son/sondes-flamand.mp3',	//20
+      './ressources/son/mira-staff.mp3',	//21
+      './ressources/son/eline-cheval.mp3',	//22
+      './ressources/son/anais-yorkshire.mp3',	//23
+      './ressources/son/maria-chat.mp3',	//24
+      './ressources/son/wadah-loup.mp3',	//25
+      './ressources/son/zinedine-aigle.mp3',	//25
+      './ressources/son/kaouthar-papillon.mp3', //26
+      './ressources/son/adam_panthere.mp3', //27
+      './ressources/son/alexandre_serpent.mp3', //28
+      './ressources/son/allya_chien.mp3', //29
+      './ressources/son/amaury_komodo.mp3', //30
+      './ressources/son/amaury_panthere_pink.mp3', //31
+      './ressources/son/amaury_panthere_pink.mp3', //32 //////// TODO arthus chat
+      './ressources/son/bryan_renard.mp3', //33
+      './ressources/son/clement_homard.mp3', //34
+      './ressources/son/iles_aigle.mp3', //35
+      './ressources/son/khalima_faucon.mp3', //36
+      './ressources/son/khalima_faucon.mp3', //37 //////////////TODO leatitia ours
+      './ressources/son/khalima_faucon.mp3', //38 //////////////TODO mohamed chien
+      './ressources/son/prescillia_tortue.mp3', //39
+      './ressources/son/ryan_lion.mp3', //40
+      './ressources/son/ryan_lion.mp3', //41 //////// TODO sarra cheval
+      './ressources/son/sherine_tigre.mp3', //42 
+      './ressources/son/xaviera_escargot.mp3', //43 
+      './ressources/son/xaviera_sirene.mp3' //44 
+];
