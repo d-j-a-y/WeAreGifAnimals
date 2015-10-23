@@ -27,11 +27,11 @@
 /************************************************************************************/
 
 var backgroundBank =     [
+      './ressources/fond/bg_lastation.jpeg',
       './ressources/fond/bg_hublot.jpeg',
       './ressources/fond/bg_stroch.jpeg',
       './ressources/fond/bg_jardin.jpeg',
       './ressources/fond/bg_bibliotheque.jpeg',
-      './ressources/fond/bg_lastation.jpeg',
       './ressources/fond/bg_garibaldi.jpeg'
      ];
 
