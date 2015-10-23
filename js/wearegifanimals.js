@@ -93,6 +93,8 @@ var indexCloned = 0;                            // Index of clone ID, use to dup
 /*var imagesCount = 25;	*///
 var currentFactor = 1;                          // Resize factor for responsive design
 var menuBasOriginalWidth ;                      //
+var menuBasOriginalHeight;
+var menuBasOriginalBottom;
 var menuHautOriginalFontSize ;                  //
 
 /* jquery document ready */
@@ -122,6 +124,8 @@ $(function() {
 	
 	maxBackground = backgroundBank.length-1;
 	menuBasOriginalWidth = parseInt($('#menubas').css('width'));
+	menuBasOriginalHeight = parseInt($('#menubas').css('height'));
+	menuBasOriginalBottom = parseInt($('#menubas').css('bottom'));
 	menuHautOriginalFontSize = parseInt($('a.menuhaut').css('font-size'));
 	
 	resetAnimemalsPosition();	
@@ -271,7 +275,9 @@ function updateSceneSize() {
 		var menubas = $('#menubas');
 		var menuhaut = $('a.menuhaut');
 //		menubas.css('width', ((menuBasOriginalWidth * factor)+"px"));
-		menubas.css('width', getContextSize(menuBasOriginalWidth, "px"));		
+		menubas.css('width', getContextSize(menuBasOriginalWidth, "px"));
+		var menuBasBottom = menuBasOriginalBottom +  (parseInt(getContextSize(menuBasOriginalHeight, "")) - menuBasOriginalHeight);
+		menubas.css('bottom', menuBasBottom + "px");
 		menuhaut.css('font-size', getContextSize(menuHautOriginalFontSize, "px"));
 //		menuhaut.css('font-size', ((menuHautOriginalFontSize * factor)+"px"));
 		
