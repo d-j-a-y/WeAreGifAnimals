@@ -233,8 +233,8 @@ div.menuhaut:hover
 	position: fixed;
 	bottom: 40px;
 	right: 40px;
-	width: 261px;
-	height: 63px;
+	width: 260px;
+	height: 125px;
 
 	z-index:800; 
 }
