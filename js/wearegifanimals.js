@@ -41,11 +41,11 @@ var maxBackground = 0;                          // Size of the backgroundBank in
 var animemalBank = [{name:"abel", zindex:50, bottom:"10%", top:"auto", right:"auto", left:"2%", width: "120px", height:"auto" },
                     {name:"adam-c", zindex:20, bottom:"35%", top:"auto", right:"1%", left:"auto", width: "200px", height:"auto" },
                     {name:"adam-p", zindex:100, bottom:"auto", top:"8%", right:"auto", left:"40%", width: "130px", height:"auto" },
-                    {name:"adam_panthere", zindex:100, bottom:"auto", top:"58%", right:"42%", left:"auto", width: "130px", height:"auto" },
-                    {name:"alexandre_serpent", zindex:100, bottom:"auto", top:"18%", right:"auto", left:"10%", width: "130px", height:"auto" },
-                    {name:"allya_renard", zindex:100, bottom:"auto", top:"8%", right:"auto", left:"40%", width: "130px", height:"auto" },
+                    {name:"adam_panthere", zindex:100, bottom:"50%", top:"auto", right:"50%", left:"auto", width: "84px", height:"auto" },
+                    {name:"alexandre_serpent", zindex:100, bottom:"auto", top:"20%", right:"auto", left:"38%", width: "120px", height:"auto" },
+                    {name:"allya_renard", zindex:100, bottom:"auto", top:"1%", right:"auto", left:"40%", width: "87px", height:"auto" },
                     {name:"alicia", zindex:20, bottom:"auto", top:"40%", right:"20%", left:"auto", width: "400", height:"auto" },
-                    {name:"amaury_komodo", zindex:100, bottom:"auto", top:"50%", right:"20%", left:"auto", width: "130px", height:"auto" },
+                    {name:"amaury_komodo", zindex:100, bottom:"10%", top:"auto", right:"auto", left:"45%", width: "100px", height:"auto" },
                     {name:"amaury_panthere_rose", zindex:100, bottom:"20%", top:"auto", right:"auto", left:"33%", width: "88px", height:"auto" },
                     {name:"anais", zindex:100, bottom:"auto", top:"45%", right:"auto", left:"25%", width: "140px", height:"auto" },
                     {name:"anis", zindex:100, bottom:"20%", top:"auto", right:"40%", left:"auto", width: "130px", height:"auto" },
@@ -61,7 +61,7 @@ var animemalBank = [{name:"abel", zindex:50, bottom:"10%", top:"auto", right:"au
                     {name:"halima", zindex:50, bottom:"auto", top:"20%", right:"15%", left:"auto", width: "143px", height:"auto" },
                     {name:"iles_aigle", zindex:50, bottom:"auto", top:"12%", right:"auto", left:"10%", width: "119px", height:"auto" },
 /*                    {name:"jordy", zindex:50, bottom:"0%", top:"auto", right:"35%", left:"auto", width: "150px", height:"auto" }, */
-                    {name:"kaouthar", zindex:50, bottom:"auto", top:"10%", right:"35%", left:"auto", width: "150px", height:"auto" },
+                    {name:"kaouthar", zindex:50, bottom:"auto", top:"10%", right:"48%", left:"auto", width: "110px", height:"auto" },
                     {name:"khalima_faucon", zindex:50, bottom:"auto", top:"18%", right:"auto", left:"27%", width: "77px", height:"auto" },
                     {name:"laetitia_ours", zindex:50, bottom:"10%", top:"auto", right:"auto", left:"30%", width: "134px", height:"auto" },
                     {name:"lylou", zindex:50, bottom:"auto", top:"5%", right:"30%", left:"auto", width: "150px", height:"auto" },
@@ -71,7 +71,7 @@ var animemalBank = [{name:"abel", zindex:50, bottom:"10%", top:"auto", right:"au
                     {name:"mohamed_chien", zindex:150, bottom:"5%", top:"auto", right:"auto", left:"30%", width: "144px", height:"auto" },
                     {name:"oceane", zindex:50, bottom:"auto", top:"40%", right:"auto", left:"40%", width: "180px", height:"auto" },
                     {name:"pablo", zindex:50, bottom:"auto", top:"3%", right:"auto", left:"10%", width: "180px", height:"auto" },
-                    {name:"prescillia_tortue", zindex:150, bottom:"50%", top:"auto", right:"50%", left:"auto", width: "84px", height:"auto" },
+                    {name:"prescillia_tortue", zindex:150, bottom:"50%", top:"auto", right:"45%", left:"auto", width: "84px", height:"auto" },
                     {name:"renda", zindex:50, bottom:"25%", top:"auto", right:"auto", left:"15%", width: "150px", height:"auto" },
                     {name:"ryan_lion", zindex:50, bottom:"auto", top:"35%", right:"auto", left:"30%", width: "70px", height:"auto" },
                     {name:"sarra_cheval", zindex:50, bottom:"auto", top:"10%", right:"auto", left:"15%", width: "89px", height:"auto" },
@@ -83,7 +83,7 @@ var animemalBank = [{name:"abel", zindex:50, bottom:"10%", top:"auto", right:"au
                     {name:"xavier", zindex:150, bottom:"auto", top:"15%", right:"auto", left:"25%", width: "140px", height:"auto" },
                     {name:"xaviera_escargot", zindex:100, bottom:"10%", top:"auto", right:"auto", left:"52%", width: "96px", height:"auto" },
                     {name:"xaviera_sirene", zindex:100, bottom:"auto", top:"148px", left:"4%", right:"auto", width: "123px", height:"auto" },
-                    {name:"zinedine", zindex:150, bottom:"auto", top:"5%", right:"15%", left:"auto", width: "170px", height:"auto" }];
+                    {name:"zinedine", zindex:150, bottom:"auto", top:"1%", right:"22%", left:"auto", width: "124px", height:"auto" }];
 
 
 var imageBeingRotated = false;  // The DOM image currently being rotated (if any)
