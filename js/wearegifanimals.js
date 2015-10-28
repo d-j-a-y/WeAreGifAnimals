@@ -26,12 +26,14 @@
 /*                                                                                  */
 /************************************************************************************/
 
-var FLAG_SCENE_STATION = 1; // 0000001
-var FLAG_SCENE_HUBLOT = 2; //  0000010
-var FLAG_SCENE_STROCH = 4; //  0000100
-var FLAG_SCENE_JARDIN = 8; //  0001000
-var FLAG_SCENE_BIBLIO = 16; // 0010000
-var FLAG_SCENE_GARIB = 32; //  0100000
+var FLAG_SCENE_STATION = 1; //00000001
+var FLAG_SCENE_HUBLOT = 2; // 00000010
+var FLAG_SCENE_STROCH = 4; // 00000100
+var FLAG_SCENE_JARDIN = 8; // 00001000
+var FLAG_SCENE_BIBLIO = 16; //00010000
+var FLAG_SCENE_GARIB = 32; // 00100000
+
+var FLAG_SCENE_ALL = 255; //  11111111
 
 var backgroundBank =     [
       {url:'./ressources/fond/bg_lastation.jpeg', flag:FLAG_SCENE_STATION},
@@ -77,6 +79,7 @@ var animemalBank = [{name:"abel_cafard", zindex:50, bottom:"10%", top:"auto", ri
                     {name:"milo", zindex:150, bottom:"15%", top:"auto", right:"auto", left:"30%", width: "58px", height:"auto" },
                     {name:"mohamed_chien", zindex:150, bottom:"5%", top:"auto", right:"auto", left:"30%", width: "144px", height:"auto" },
                     {name:"oceane_sirene", zindex:50, bottom:"auto", top:"28%", right:"auto", left:"40%", width: "112px", height:"auto" },
+                    {name:"ouley_chauveSouris", zindex:50, bottom:"auto", top:"23%", right:"auto", left:"45%", width: "112px", height:"auto"  , flagscene:~FLAG_SCENE_STATION },
                     {name:"pablo_cigalle", zindex:50, bottom:"auto", top:"5%", right:"auto", left:"5%", width: "116px", height:"auto" },
                     {name:"prescillia_tortue", zindex:150, bottom:"45%", top:"auto", right:"36%", left:"auto", width: "70px", height:"auto" },
                     {name:"renda_leopard", zindex:50, bottom:"37%", top:"auto", right:"auto", left:"20%", width: "117px", height:"auto" },
