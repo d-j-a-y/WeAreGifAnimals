@@ -203,6 +203,10 @@ div.menuhaut
 	left:5%;
 }
 
+div.menuhaut h3{
+	font-weight: normal;
+	background-color: red;
+}
 
 a.menuhaut
 {
