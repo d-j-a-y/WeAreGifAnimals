@@ -1,4 +1,6 @@
 #!/bin/bash
+#
+# HOWTO : flvalphatogif lenomdemonflv_sans.flv
 
 avconv -i $1.flv -r 25 -vcodec png -pix_fmt rgb32 foo-%03d.png
 find . -name \*.png -exec convert '{}' -resize 40% '{}'.png \;
