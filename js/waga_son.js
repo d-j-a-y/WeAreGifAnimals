@@ -43,6 +43,14 @@ var sceneSoundBank =     [
       './ressources/son/ryan_lion.mp3', //40
       './ressources/son/ryan_lion.mp3', //41 //////// TODO sarra cheval
       './ressources/son/sherine_tigre.mp3', //42 
-      './ressources/son/xaviera_escargot.mp3', //43 
-      './ressources/son/xaviera_sirene.mp3' //44 
-]; // TODO tasmia 45
+      './ressources/son/xaviera_escargot.mp3', //43
+      './ressources/son/xaviera_sirene.mp3', //44
+      './ressources/son/tasmia-pingouin.mp3', //45
+      './ressources/son/ouley_chauve-souris.mp3', //46
+      './ressources/son/rebecca-dauphin.mp3', //47
+      './ressources/son/sofiane-scorpion.mp3', //48
+      './ressources/son/anam_t-rex.mp3', //49
+      './ressources/son/ayoub-lezard.mp3', //50
+      './ressources/son/ahtisham-scarabee.mp3', //51
+      './ressources/son/meriem-papillon.mp3' //51
+];
