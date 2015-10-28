@@ -78,6 +78,7 @@ var animemalBank = [{name:"abel_cafard", zindex:50, bottom:"10%", top:"auto", ri
                     {name:"laetitia_ours", zindex:50, bottom:"24%", top:"auto", right:"auto", left:"24%", width: "90px", height:"auto" },
                     {name:"lylou", zindex:50, bottom:"auto", top:"15%", right:"28%", left:"auto", width: "102px", height:"auto" },
                     {name:"maria_chat", zindex:150, bottom:"28%", top:"auto", right:"auto", left:"20%", width: "34px", height:"auto" },
+                    {name:"meriem_papillon", zindex:150, bottom:"49%", top:"auto", right:"auto", left:"2%", width: "85px", height:"auto"  , flagscene:~FLAG_SCENE_STATION},
                     {name:"mira_staff", zindex:50, bottom:"auto", top:"24%", right:"38%", left:"auto", width: "50px", height:"auto" },
                     {name:"milo", zindex:150, bottom:"15%", top:"auto", right:"auto", left:"30%", width: "58px", height:"auto" },
                     {name:"mohamed_chien", zindex:150, bottom:"5%", top:"auto", right:"auto", left:"30%", width: "144px", height:"auto" },
