@@ -26,13 +26,20 @@
 /*                                                                                  */
 /************************************************************************************/
 
+var FLAG_SCENE_STATION = 1; // 0000001
+var FLAG_SCENE_HUBLOT = 2; //  0000010
+var FLAG_SCENE_STROCH = 4; //  0000100
+var FLAG_SCENE_JARDIN = 8; //  0001000
+var FLAG_SCENE_BIBLIO = 16; // 0010000
+var FLAG_SCENE_GARIB = 32; //  0100000
+
 var backgroundBank =     [
-      './ressources/fond/bg_lastation.jpeg',
-      './ressources/fond/bg_hublot.jpeg',
-      './ressources/fond/bg_stroch.jpeg',
-      './ressources/fond/bg_jardin.jpeg',
-      './ressources/fond/bg_bibliotheque.jpeg',
-      './ressources/fond/bg_garibaldi.gif'
+      {url:'./ressources/fond/bg_lastation.jpeg', flag:FLAG_SCENE_STATION},
+      {url:'./ressources/fond/bg_hublot.jpeg', flag:FLAG_SCENE_HUBLOT},
+      {url:'./ressources/fond/bg_stroch.jpeg', flag:FLAG_SCENE_STROCH},
+      {url:'./ressources/fond/bg_jardin.jpeg', flag:FLAG_SCENE_JARDIN},
+      {url:'./ressources/fond/bg_bibliotheque.jpeg', flag:FLAG_SCENE_BIBLIO},
+      {url:'./ressources/fond/bg_garibaldi.gif', flag:FLAG_SCENE_GARIB}
      ];
 
 var currentBackground = 0;                      // The actual background image index from backgroundBank table
@@ -78,6 +85,7 @@ var animemalBank = [{name:"abel_cafard", zindex:50, bottom:"10%", top:"auto", ri
                     {name:"sherine_tigre", zindex:50, bottom:"43%", top:"auto", right:"29%", left:"auto", width: "100px", height:"auto" },
                     {name:"sondes", zindex:50, bottom:"24%", top:"auto", right:"0%", left:"auto", width: "91px", height:"auto" },
                     {name:"tania", zindex:50, bottom:"10%", top:"auto", right:"28%", left:"auto", width: "138px", height:"auto" },
+                    {name:"tasmia_pingouin", zindex:50, bottom:"24%", top:"auto", right:"28%", left:"auto", width: "70px", height:"auto" , flagscene:~FLAG_SCENE_STATION },
                     {name:"wadah", zindex:150, bottom:"23%", top:"auto", right:"12%", left:"auto", width: "85px", height:"auto" },
                     {name:"wallid", zindex:150, bottom:"10%", top:"auto", right:"8%", left:"auto", width: "60px", height:"auto" },
                     {name:"xavier", zindex:150, bottom:"auto", top:"3%", right:"8%", left:"auto", width: "95px", height:"auto" },
@@ -128,7 +136,8 @@ $(function() {
 	menuBasOriginalHeight = parseInt($('#menubas').css('height'));
 	menuBasOriginalBottom = parseInt($('#menubas').css('bottom'));
 	menuHautOriginalFontSize = parseInt($('a.menuhaut').css('font-size'));
-	
+
+	//selectAnimemalsByScene();
 	resetAnimemalsPosition();	
 	updateSceneSize();
 });
@@ -244,7 +253,7 @@ function changebackground(direction){
 	else if (currentBackground > maxBackground)
 		currentBackground = 0;
 
-	document.body.style.backgroundImage = "url(" + backgroundBank[currentBackground] + ")";
+	document.body.style.backgroundImage = "url(" + backgroundBank[currentBackground].url + ")";
 }
 
 // Update the scene to context client screen
@@ -317,6 +326,26 @@ function resetAnimemalsPosition(){
 		$("."+animemalBank[i].name).css('zIndex',animemalBank[i].zindex);
 
 	}
+}
+
+// Choose the Animemals to display accordingly to the current scene
+function selectAnimemalsByScene(){
+	for (var i = animemalBank.length-1 ; i >= 0 ; i-=1){
+		var animemal = $("."+animemalBank[i].name)[0];
+
+		animemal.style.visibility = isAnimalsInScene(i, currentBackground);
+
+	}
+}
+
+// Is Animals In Scene
+// param : animal index
+// param : scene index
+function isAnimalsInScene(animalIndex, sceneIndex) {
+
+	var test = animemalBank[animalIndex] & backgroundBank[sceneIndex].flag;
+
+	return false ; // animemalBank[animalIndex] & animalIndex backgroundBank[sceneIndex].flag ;
 }
 
 // REturn a string with size adjusted to current screen size context

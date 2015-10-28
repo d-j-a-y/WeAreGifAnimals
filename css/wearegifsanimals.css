@@ -190,7 +190,9 @@ div.menuhaut
 	max-height: 70%;
 	padding:1em 5em;
 	margin-right: 25%;
-	
+
+	text-align: justify;
+
 	overflow: auto;
 
 	display: none;
@@ -204,7 +206,7 @@ div.menuhaut
 
 a.menuhaut
 {
-	background-color: rgba(120,120,120,0.2);
+	background-color: rgba(120,120,120,0.8);
 
 	margin-left: 2em;
 	padding: 1em;
