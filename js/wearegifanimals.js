@@ -136,7 +136,8 @@ $(function() {
 	menuBasOriginalHeight = parseInt($('#menubas').css('height'));
 	menuBasOriginalBottom = parseInt($('#menubas').css('bottom'));
 	menuHautOriginalFontSize = parseInt($('a.menuhaut').css('font-size'));
-	
+
+	//selectAnimemalsByScene();
 	resetAnimemalsPosition();	
 	updateSceneSize();
 });
@@ -332,9 +333,19 @@ function selectAnimemalsByScene(){
 	for (var i = animemalBank.length-1 ; i >= 0 ; i-=1){
 		var animemal = $("."+animemalBank[i].name)[0];
 
-		animemal.style.visibility = isAnimalsInScene(animemalBank[i].flagscene, currentBackground);
+		animemal.style.visibility = isAnimalsInScene(i, currentBackground);
 
 	}
+}
+
+// Is Animals In Scene
+// param : animal index
+// param : scene index
+function isAnimalsInScene(animalIndex, sceneIndex) {
+
+	var test = animemalBank[animalIndex] & backgroundBank[sceneIndex].flag;
+
+	return false ; // animemalBank[animalIndex] & animalIndex backgroundBank[sceneIndex].flag ;
 }
 
 // REturn a string with size adjusted to current screen size context
