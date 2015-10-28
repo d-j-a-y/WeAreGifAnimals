@@ -3,7 +3,7 @@
 avconv -i $1.flv -r 25 -vcodec png -pix_fmt rgb32 foo-%03d.png
 find . -name \*.png -exec convert '{}' -resize 40% '{}'.png \;
 convert foo-???.png.png $1.gif
-
+rm *.png
 
 # retaille
 # find . -name \*.png -exec convert '{}' -resize 40% '{}'.png \;
