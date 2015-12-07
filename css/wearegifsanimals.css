@@ -136,7 +136,6 @@ height: 20px;
 z-index:800; 
 
 }
-
 #flipbgdroite:hover{
 		right: 35px;
 }
@@ -151,7 +150,7 @@ right: 60px;
 width: 20px;
 height: 20px;
 
-z-index:800; 
+z-index:800;
 
 }
 #flipbggauche:hover{
@@ -169,10 +168,24 @@ height: 40px;
 
 z-index:800;
 }
-
 #cleanscene:hover{
-background-image: url(../ressources/ui/icon-clean-r.png);	
+background-image: url(../ressources/ui/icon-clean-r.png);
 
+}
+
+#togglesound{
+background-image: url(../ressources/ui/audio-volume-high.png);
+background-repeat:no-repeat;
+position: fixed;
+bottom: 40px;
+left: 40px;
+width: 40px;
+height: 40px;
+
+z-index:800;
+}
+#togglesound:hover{
+background-image: url(../ressources/ui/audio-volume-muted.png);
 }
 
 h3
@@ -203,6 +216,10 @@ div.menuhaut
 	left:5%;
 }
 
+div.menuhaut h3{
+	font-weight: normal;
+	background-color: red;
+}
 
 a.menuhaut
 {

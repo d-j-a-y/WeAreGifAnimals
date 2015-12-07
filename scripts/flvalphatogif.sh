@@ -1,4 +1,15 @@
 #!/bin/bash
+#
+# HOWTO : flvalphatogif lenomdemonflv_sans.flv
+# WARNING : ALL .PNG FROM CURRENT FOLDER WILL BE REMOVED !
+
+echo "WARNING : ALL .PNG FROM CURRENT FOLDER WILL BE REMOVED !"
+select yn in "Ok" "No"; do
+    case $yn in
+        Ok ) break;;
+        No ) exit;;
+    esac
+done
 
 avconv -i $1.flv -r 25 -vcodec png -pix_fmt rgb32 foo-%03d.png
 find . -name \*.png -exec convert '{}' -resize 40% '{}'.png \;

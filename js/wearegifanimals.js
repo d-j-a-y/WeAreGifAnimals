@@ -26,12 +26,14 @@
 /*                                                                                  */
 /************************************************************************************/
 
-var FLAG_SCENE_STATION = 1; // 0000001
-var FLAG_SCENE_HUBLOT = 2; //  0000010
-var FLAG_SCENE_STROCH = 4; //  0000100
-var FLAG_SCENE_JARDIN = 8; //  0001000
-var FLAG_SCENE_BIBLIO = 16; // 0010000
-var FLAG_SCENE_GARIB = 32; //  0100000
+var FLAG_SCENE_STATION = 1; //00000001
+var FLAG_SCENE_HUBLOT = 2; // 00000010
+var FLAG_SCENE_STROCH = 4; // 00000100
+var FLAG_SCENE_JARDIN = 8; // 00001000
+var FLAG_SCENE_BIBLIO = 16; //00010000
+var FLAG_SCENE_GARIB = 32; // 00100000
+
+var FLAG_SCENE_ALL = 255; //  11111111
 
 var backgroundBank =     [
       {url:'./ressources/fond/bg_lastation.jpeg', flag:FLAG_SCENE_STATION},
@@ -56,7 +58,10 @@ var animemalBank = [{name:"abel_cafard", zindex:50, bottom:"10%", top:"auto", ri
                     {name:"amaury_panthere_rose", zindex:100, bottom:"33%", top:"auto", right:"auto", left:"28%", width: "88px", height:"auto" },
                     {name:"anais", zindex:100, bottom:"30%", top:"auto", right:"auto", left:"15%", width: "64px", height:"auto" },
                     {name:"anis", zindex:100, bottom:"auto", top:"45%", right:"auto", left:"35%", width: "74px", height:"auto" },
+                    {name:"anam_tyrex", zindex:100, bottom:"auto", bottom:"38%", right:"auto", left:"40%", width: "100px", height:"auto"  , flagscene:~FLAG_SCENE_STATION },
                     {name:"arthus_chat", zindex:100, bottom:"auto", top:"35%", right:"40%", left:"auto", width: "86px", height:"auto" },
+                    {name:"ahtisham_scarabee", zindex:100, bottom:"auto", top:"30%", right:"10%", left:"auto", width: "95px", height:"auto" , flagscene:~FLAG_SCENE_STATION},
+                    {name:"ayoub_lezard", zindex:100, bottom:"auto", top:"37%", right:"35%", left:"auto", width: "100px", height:"auto"  , flagscene:~FLAG_SCENE_STATION},
                     {name:"baptiste", zindex:50, bottom:"1%", top:"auto", right:"auto", left:"50%", width: "197px", height:"auto" },
                     {name:"bryan_renard", zindex:50, bottom:"3%", top:"auto", right:"auto", left:"15%", width: "173px", height:"auto" },
                     {name:"carmen_coq", zindex:0, bottom:"auto", top:"15%", right:"auto", left:"28%", width: "90px", height:"auto" },
@@ -73,16 +78,20 @@ var animemalBank = [{name:"abel_cafard", zindex:50, bottom:"10%", top:"auto", ri
                     {name:"laetitia_ours", zindex:50, bottom:"24%", top:"auto", right:"auto", left:"24%", width: "90px", height:"auto" },
                     {name:"lylou", zindex:50, bottom:"auto", top:"15%", right:"28%", left:"auto", width: "102px", height:"auto" },
                     {name:"maria_chat", zindex:150, bottom:"28%", top:"auto", right:"auto", left:"20%", width: "34px", height:"auto" },
+                    {name:"meriem_papillon", zindex:150, bottom:"49%", top:"auto", right:"auto", left:"2%", width: "85px", height:"auto"  , flagscene:~FLAG_SCENE_STATION},
                     {name:"mira_staff", zindex:50, bottom:"auto", top:"24%", right:"38%", left:"auto", width: "50px", height:"auto" },
                     {name:"milo", zindex:150, bottom:"15%", top:"auto", right:"auto", left:"30%", width: "58px", height:"auto" },
                     {name:"mohamed_chien", zindex:150, bottom:"5%", top:"auto", right:"auto", left:"30%", width: "144px", height:"auto" },
                     {name:"oceane_sirene", zindex:50, bottom:"auto", top:"28%", right:"auto", left:"40%", width: "112px", height:"auto" },
+                    {name:"ouley_chauveSouris", zindex:50, bottom:"auto", top:"23%", right:"auto", left:"45%", width: "112px", height:"auto"  , flagscene:~FLAG_SCENE_STATION },
                     {name:"pablo_cigalle", zindex:50, bottom:"auto", top:"5%", right:"auto", left:"5%", width: "116px", height:"auto" },
                     {name:"prescillia_tortue", zindex:150, bottom:"45%", top:"auto", right:"36%", left:"auto", width: "70px", height:"auto" },
                     {name:"renda_leopard", zindex:50, bottom:"37%", top:"auto", right:"auto", left:"20%", width: "117px", height:"auto" },
+                    {name:"rebecca_dauphin", zindex:50, bottom:"45%", top:"auto", right:"auto", left:"13%", width: "117px", height:"auto"   , flagscene:~FLAG_SCENE_STATION },
                     {name:"ryan_lion", zindex:50, bottom:"auto", top:"35%", right:"auto", left:"24%", width: "60px", height:"auto" },
                     {name:"sarra_cheval", zindex:50, bottom:"auto", top:"17%", right:"auto", left:"15%", width: "70px", height:"auto" },
                     {name:"sherine_tigre", zindex:50, bottom:"43%", top:"auto", right:"29%", left:"auto", width: "100px", height:"auto" },
+                    {name:"sofiane_scorpion", zindex:50, bottom:"23%", top:"auto", right:"5%", left:"auto", width: "91px", height:"auto"   , flagscene:~FLAG_SCENE_STATION },
                     {name:"sondes", zindex:50, bottom:"24%", top:"auto", right:"0%", left:"auto", width: "91px", height:"auto" },
                     {name:"tania", zindex:50, bottom:"10%", top:"auto", right:"28%", left:"auto", width: "138px", height:"auto" },
                     {name:"tasmia_pingouin", zindex:50, bottom:"24%", top:"auto", right:"28%", left:"auto", width: "70px", height:"auto" , flagscene:~FLAG_SCENE_STATION },
@@ -326,6 +335,10 @@ function resetAnimemalsPosition(){
 		$("."+animemalBank[i].name).css('zIndex',animemalBank[i].zindex);
 
 	}
+}
+
+// toggleSound
+function toggleSound() {
 }
 
 // Choose the Animemals to display accordingly to the current scene
