@@ -1,23 +1,42 @@
 #!/bin/bash
-#
-# HOWTO : flvalphatogif lenomdemonflv_sans.flv
-# WARNING : ALL .PNG FROM CURRENT FOLDER WILL BE REMOVED !
 
-echo "WARNING : ALL .PNG FROM CURRENT FOLDER WILL BE REMOVED !"
-select yn in "Ok" "No"; do
-    case $yn in
-        Ok ) break;;
-        No ) exit;;
-    esac
-done
+##TODO resize % has option
+##TODO adjust rythm has option
+
+helpme()
+{
+	echo ""
+	echo "### WHATFOR : convert an flv (whith alpha) to animated gif "
+	echo "### HOWTO : $0 flvfilename_without.flv"
+}
+
+if [ $# -eq 0 ]
+then
+	echo "ERROR : and ? .... you forgot the flv name ! (without .flv)"
+	helpme
+	exit 1;
+fi
+
+if [ ! -f $1 ]
+then
+	echo "ERROR : $1.flv not valid"
+	helpme
+	exit 1;
+fi
+
+
+#echo "WARNING : ALL .PNG FROM CURRENT FOLDER WILL BE REMOVED !"
+#select yn in "Ok" "No"; do
+#    case $yn in
+#        Ok ) break;;
+#        No ) exit;;
+#    esac
+#done
 
 avconv -i $1.flv -r 25 -vcodec png -pix_fmt rgb32 foo-%03d.png
 find . -name \*.png -exec convert '{}' -resize 40% '{}'.png \;
 convert foo-???.png.png $1.gif
-rm *.png
-
-# retaille
-# find . -name \*.png -exec convert '{}' -resize 40% '{}'.png \;
+rm foo-*.png
 
 #http://mwholt.blogspot.fr/2014/08/convert-video-to-animated-gif-with.html
 #http://www.imagemagick.org/discourse-server/viewtopic.php?t=24010
