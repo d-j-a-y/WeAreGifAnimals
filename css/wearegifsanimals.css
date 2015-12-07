@@ -205,6 +205,7 @@ div.menuhaut
 	margin-right: 25%;
 
 	text-align: justify;
+	font-weight: normal;
 
 	overflow: auto;
 
@@ -214,11 +215,6 @@ div.menuhaut
 	position:fixed; 
 	top:2em; 
 	left:5%;
-}
-
-div.menuhaut h3{
-	font-weight: normal;
-	background-color: red;
 }
 
 a.menuhaut
@@ -244,6 +240,23 @@ div.menuhaut:hover
     display: block;
 }
 
+
+div.menuhaut h3{
+	font-weight: bold;
+}
+
+div.menuhaut h3.cite
+{
+	text-align:right;
+	font-weight: normal;
+}
+
+div.menuhaut span.cite
+{
+	vertical-align : top;
+	font-size: 60%;
+}
+
 #menubas
 {
 	background-image: url(../ressources/ui/artmobilis.png);
@@ -261,15 +274,4 @@ div.menuhaut:hover
 #menubas:hover
 {
 	background-image: url(../ressources/ui/artmobilis-nb.png);
-}
-
-h3.cite
-{
-	text-align:right;
-}
-
-span.cite
-{
-	vertical-align : top;
-	font-size: 60%;
 }
