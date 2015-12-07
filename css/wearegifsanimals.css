@@ -263,6 +263,11 @@ div.menuhaut:hover
 	background-image: url(../ressources/ui/artmobilis-nb.png);
 }
 
+h3.cite
+{
+	text-align:right;
+}
+
 span.cite
 {
 	vertical-align : top;
