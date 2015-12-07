@@ -337,6 +337,10 @@ function resetAnimemalsPosition(){
 	}
 }
 
+// toggleSound
+function toggleSound() {
+}
+
 // Choose the Animemals to display accordingly to the current scene
 function selectAnimemalsByScene(){
 	for (var i = animemalBank.length-1 ; i >= 0 ; i-=1){

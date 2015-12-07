@@ -173,7 +173,7 @@ background-image: url(../ressources/ui/icon-clean-r.png);
 
 }
 
-#tooglesound{
+#togglesound{
 background-image: url(../ressources/ui/audio-volume-high.png);
 background-repeat:no-repeat;
 position: fixed;
@@ -184,7 +184,7 @@ height: 40px;
 
 z-index:800;
 }
-#tooglesound:hover{
+#togglesound:hover{
 background-image: url(../ressources/ui/audio-volume-muted.png);
 }
 
