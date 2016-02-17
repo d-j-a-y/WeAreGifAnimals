@@ -81,6 +81,7 @@ var animemalBank = [{name:"abel_cafard", zindex:50, bottom:"10%", top:"auto", ri
 /*                    {name:"jordy", zindex:50, bottom:"0%", top:"auto", right:"35%", left:"auto", width: "150px", height:"auto" }, */
                     {name:"jade_lapin", zindex:100, bottom:"24%", top:"auto", right:"auto", left:"43%", width: "40px", height:"auto" }, // TODO 1602 placement TODO
                     {name:"kaouthar_papillon", zindex:50, bottom:"auto", top:"5%", right:"43%", left:"auto", width: "90px", height:"auto" },
+                    {name:"kevin_cerf", zindex:100, bottom:"30%", top:"auto", right:"33%", left:"auto", width: "90px", height:"auto" }, // TODO 1602 placement                   
                     {name:"khalima_faucon", zindex:50, bottom:"auto", top:"24%", right:"auto", left:"23%", width: "60px", height:"auto" },
                     {name:"kyrian_murene", zindex:100, bottom:"5%", top:"auto", right:"25%", left:"auto%", width: "90px", height:"auto" }, // TODO 1602 placement
                     {name:"laetitia_ours", zindex:50, bottom:"24%", top:"auto", right:"auto", left:"24%", width: "90px", height:"auto" },
@@ -94,6 +95,7 @@ var animemalBank = [{name:"abel_cafard", zindex:50, bottom:"10%", top:"auto", ri
                     {name:"ouley_chauveSouris", zindex:50, bottom:"auto", top:"23%", right:"auto", left:"45%", width: "112px", height:"auto"  , flagscene:~FLAG_SCENE_STATION },
                     {name:"pablo_cigalle", zindex:50, bottom:"auto", top:"5%", right:"auto", left:"5%", width: "116px", height:"auto" },
                     {name:"prescillia_tortue", zindex:150, bottom:"45%", top:"auto", right:"36%", left:"auto", width: "70px", height:"auto" },
+                    {name:"rayan_scorpion", zindex:100, bottom:"5%", top:"auto", right:"auto", left:"10%", width: "90px", height:"auto" },
                     {name:"renda_leopard", zindex:50, bottom:"37%", top:"auto", right:"auto", left:"20%", width: "117px", height:"auto" },
                     {name:"rebecca_dauphin", zindex:50, bottom:"45%", top:"auto", right:"auto", left:"13%", width: "117px", height:"auto"   , flagscene:~FLAG_SCENE_STATION },
                     {name:"ryan_lion", zindex:50, bottom:"auto", top:"35%", right:"auto", left:"24%", width: "60px", height:"auto" },

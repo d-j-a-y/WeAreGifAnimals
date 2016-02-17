@@ -60,6 +60,9 @@ var sceneSoundBank =     [
       './ressources/son/wassim_cobra.mp3', //57
       './ressources/son/eliamine_zebre.mp3', //58
       './ressources/son/achille_mantre_religieuse.mp3', //59
-      './ressources/son/hatim_koala.mp3' //60
+      './ressources/son/hatim_koala.mp3', //60
+      './ressources/son/herve_elephant.mp3', //61      
+      './ressources/son/kevin_cerf.mp3', //62
+      './ressources/son/rayan_scorpion.mp3' //63
 
 ];
