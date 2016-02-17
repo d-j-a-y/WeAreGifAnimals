@@ -48,6 +48,7 @@ var currentBackground = 0;                      // The actual background image i
 var maxBackground = 0;                          // Size of the backgroundBank initialized in document.ready
 
 var animemalBank = [{name:"abel_cafard", zindex:50, bottom:"10%", top:"auto", right:"auto", left:"3%", width: "66px", height:"auto" },
+                    {name:"achille_mantre_religieuse", zindex:50, bottom:"auto", top:"2%", right:"auto", left:"15%", width: "100px", height:"auto" }, // TODO 1602 placemnt
                     {name:"adam-croco", zindex:20, bottom:"10%", top:"auto", right:"auto", left:"40%", width: "135px", height:"auto" },
                     {name:"adam-p_ours", zindex:100, bottom:"37%", top:"auto", right:"auto", left:"3%", width: "56px", height:"auto" },
                     {name:"adam_panthere", zindex:100, bottom:"45%", top:"auto", right:"42%", left:"auto", width: "70px", height:"auto" },
