@@ -69,9 +69,9 @@ var animemalBank = [{name:"abel_cafard", zindex:50, bottom:"10%", top:"auto", ri
                     {name:"carmen_coq", zindex:0, bottom:"auto", top:"15%", right:"auto", left:"28%", width: "90px", height:"auto" },
                     {name:"chanette", zindex:50, bottom:"auto", top:"16%", right:"20%", left:"auto", width: "114px", height:"auto" },
                     {name:"clement_homard", zindex:50, bottom:"auto", top:"30%", right:"auto", left:"10%", width: "120px", height:"auto" },                      
-                    {name:"damien_girafe", zindex:100, bottom:"30%", top:"auto", right:"auto", left:"32%", width: "90px", height:"auto" },
+                    {name:"damien_girafe", zindex:100, bottom:"28%", top:"auto", right:"auto", left:"36%", width: "90px", height:"auto" },
                     {name:"eddy", zindex:200, bottom:"auto", top:"43%", right:"5%", left:"auto", width: "154px", height:"auto" },
-                    {name:"eliamine_zebre", zindex:100, bottom:"auto", top:"30%", right:"auto", left:"32%", width: "90px", height:"auto" }, // TODO 1602 placement
+                    {name:"eliamine_zebre", zindex:100, bottom:"33%", top:"auto", right:"auto", left:"47%", width: "90px", height:"auto" }, // TODO 1602 placement
                     {name:"eline", zindex:200, bottom:"auto", top:"40%", right:"24%", left:"auto", width: "100px", height:"auto" },              
                     {name:"falou_loup", zindex:50, bottom:"39%", top:"auto", right:"auto", left:"10%", width: "45px", height:"auto" },
                     {name:"halima", zindex:50, bottom:"23%", top:"auto", right:"23%", left:"auto", width: "88px", height:"auto" },
