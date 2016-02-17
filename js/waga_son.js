@@ -52,5 +52,7 @@ var sceneSoundBank =     [
       './ressources/son/anam_t-rex.mp3', //49
       './ressources/son/ayoub-lezard.mp3', //50
       './ressources/son/ahtisham-scarabee.mp3', //51
-      './ressources/son/meriem-papillon.mp3' //51
+      './ressources/son/meriem-papillon.mp3', //52
+      './ressources/son/jade_lapin.mp3', //53
+      './ressources/son/aladin_orque.mp3' //54
 ];
