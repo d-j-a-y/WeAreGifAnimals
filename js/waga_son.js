@@ -57,6 +57,7 @@ var sceneSoundBank =     [
       './ressources/son/aladin_orque.mp3', //54
       './ressources/son/damien_girafe.mp3', //55
       './ressources/son/kyrian_murene.mp3', //56
-      './ressources/son/wassim_cobra.mp3' //57
+      './ressources/son/wassim_cobra.mp3', //57
+      './ressources/son/eliamine_zebre.mp3' //58
 
 ];
