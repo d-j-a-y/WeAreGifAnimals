@@ -75,7 +75,7 @@ var animemalBank = [{name:"abel_cafard", zindex:50, bottom:"10%", top:"auto", ri
                     {name:"eline", zindex:200, bottom:"auto", top:"40%", right:"24%", left:"auto", width: "100px", height:"auto" },              
                     {name:"falou_loup", zindex:50, bottom:"39%", top:"auto", right:"auto", left:"10%", width: "45px", height:"auto" },
                     {name:"halima", zindex:50, bottom:"23%", top:"auto", right:"23%", left:"auto", width: "88px", height:"auto" },
-                    {name:"hatim_koala", zindex:100, bottom:"auto", top:"30%", right:"25%", left:"auto", width: "90px", height:"auto" }, // TODO 1602 palcement
+                    {name:"hatim_koala", zindex:100, bottom:"auto", top:"28%", right:"29%", left:"auto", width: "90px", height:"auto" }, // TODO 1602 palcement
                     {name:"herve_elephant", zindex:100, bottom:"13%", top:"auto", right:"auto", left:"22%", width: "90px", height:"auto" }, // TODO 1602 placement
                     {name:"iles_aigle", zindex:50, bottom:"auto", top:"17%", right:"auto", left:"6%", width: "90px", height:"auto" },
 /*                    {name:"jordy", zindex:50, bottom:"0%", top:"auto", right:"35%", left:"auto", width: "150px", height:"auto" }, */
@@ -83,7 +83,7 @@ var animemalBank = [{name:"abel_cafard", zindex:50, bottom:"10%", top:"auto", ri
                     {name:"kaouthar_papillon", zindex:50, bottom:"auto", top:"5%", right:"43%", left:"auto", width: "90px", height:"auto" },
                     {name:"kevin_cerf", zindex:100, bottom:"30%", top:"auto", right:"33%", left:"auto", width: "90px", height:"auto" }, // TODO 1602 placement                   
                     {name:"khalima_faucon", zindex:50, bottom:"auto", top:"24%", right:"auto", left:"23%", width: "60px", height:"auto" },
-                    {name:"kyrian_murene", zindex:100, bottom:"5%", top:"auto", right:"25%", left:"auto%", width: "90px", height:"auto" }, // TODO 1602 placement
+                    {name:"kyrian_murene", zindex:100, bottom:"3%", top:"auto", right:"20%", left:"auto%", width: "90px", height:"auto" }, // TODO 1602 placement
                     {name:"laetitia_ours", zindex:50, bottom:"24%", top:"auto", right:"auto", left:"24%", width: "90px", height:"auto" },
                     {name:"lylou", zindex:50, bottom:"auto", top:"15%", right:"28%", left:"auto", width: "102px", height:"auto" },
                     {name:"maria_chat", zindex:150, bottom:"28%", top:"auto", right:"auto", left:"20%", width: "34px", height:"auto" },
@@ -95,7 +95,7 @@ var animemalBank = [{name:"abel_cafard", zindex:50, bottom:"10%", top:"auto", ri
                     {name:"ouley_chauveSouris", zindex:50, bottom:"auto", top:"23%", right:"auto", left:"45%", width: "112px", height:"auto"  , flagscene:~FLAG_SCENE_STATION },
                     {name:"pablo_cigalle", zindex:50, bottom:"auto", top:"5%", right:"auto", left:"5%", width: "116px", height:"auto" },
                     {name:"prescillia_tortue", zindex:150, bottom:"45%", top:"auto", right:"36%", left:"auto", width: "70px", height:"auto" },
-                    {name:"rayan_scorpion", zindex:100, bottom:"5%", top:"auto", right:"auto", left:"10%", width: "90px", height:"auto" },
+                    {name:"rayan_scorpion", zindex:100, bottom:"auto", top:"10%", right:"auto", left:"24%", width: "60px", height:"auto" },
                     {name:"renda_leopard", zindex:50, bottom:"37%", top:"auto", right:"auto", left:"20%", width: "117px", height:"auto" },
                     {name:"rebecca_dauphin", zindex:50, bottom:"45%", top:"auto", right:"auto", left:"13%", width: "117px", height:"auto"   , flagscene:~FLAG_SCENE_STATION },
                     {name:"ryan_lion", zindex:50, bottom:"auto", top:"35%", right:"auto", left:"24%", width: "60px", height:"auto" },
@@ -107,7 +107,7 @@ var animemalBank = [{name:"abel_cafard", zindex:50, bottom:"10%", top:"auto", ri
                     {name:"tasmia_pingouin", zindex:50, bottom:"24%", top:"auto", right:"28%", left:"auto", width: "70px", height:"auto" , flagscene:~FLAG_SCENE_STATION },
                     {name:"wadah", zindex:150, bottom:"23%", top:"auto", right:"12%", left:"auto", width: "85px", height:"auto" },
                     {name:"wallid", zindex:150, bottom:"10%", top:"auto", right:"8%", left:"auto", width: "60px", height:"auto" },
-                    {name:"wassim_cobra", zindex:100, bottom:"24%", top:"auto", right:"auto", left:"10%", width: "90px", height:"auto" },  // TODO 1602 placement                  
+                    {name:"wassim_cobra", zindex:100, bottom:"24%", top:"auto", right:"auto", left:"7%", width: "90px", height:"auto" },  // TODO 1602 placement                  
                     {name:"xavier", zindex:150, bottom:"auto", top:"3%", right:"8%", left:"auto", width: "95px", height:"auto" },
                     {name:"xaviera_escargot", zindex:100, bottom:"24%", top:"auto", right:"auto", left:"42%", width: "80px", height:"auto" },
                     {name:"xaviera_sirene", zindex:100, bottom:"auto", top:"12%", left:"auto", right:"4%", width: "123px", height:"auto" },
