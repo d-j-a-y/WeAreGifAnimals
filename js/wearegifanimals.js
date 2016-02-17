@@ -101,6 +101,7 @@ var animemalBank = [{name:"abel_cafard", zindex:50, bottom:"10%", top:"auto", ri
                     {name:"tasmia_pingouin", zindex:50, bottom:"24%", top:"auto", right:"28%", left:"auto", width: "70px", height:"auto" , flagscene:~FLAG_SCENE_STATION },
                     {name:"wadah", zindex:150, bottom:"23%", top:"auto", right:"12%", left:"auto", width: "85px", height:"auto" },
                     {name:"wallid", zindex:150, bottom:"10%", top:"auto", right:"8%", left:"auto", width: "60px", height:"auto" },
+                    {name:"wassim_cobra", zindex:100, bottom:"auto", top:"15%", right:"auto", left:"37%", width: "90px", height:"auto" },  // TODO 1602 placement                  
                     {name:"xavier", zindex:150, bottom:"auto", top:"3%", right:"8%", left:"auto", width: "95px", height:"auto" },
                     {name:"xaviera_escargot", zindex:100, bottom:"24%", top:"auto", right:"auto", left:"42%", width: "80px", height:"auto" },
                     {name:"xaviera_sirene", zindex:100, bottom:"auto", top:"12%", left:"auto", right:"4%", width: "123px", height:"auto" },
