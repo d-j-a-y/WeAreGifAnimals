@@ -17,7 +17,7 @@ then
 	exit 1;
 fi
 
-if [ ! -f $1 ]
+if [ ! -f $1.flv ]
 then
 	echo "ERROR : $1.flv not valid"
 	helpme
