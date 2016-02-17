@@ -52,7 +52,7 @@ var animemalBank = [{name:"abel_cafard", zindex:50, bottom:"10%", top:"auto", ri
                     {name:"adam-croco", zindex:20, bottom:"10%", top:"auto", right:"auto", left:"40%", width: "135px", height:"auto" },
                     {name:"adam-p_ours", zindex:100, bottom:"37%", top:"auto", right:"auto", left:"3%", width: "56px", height:"auto" },
                     {name:"adam_panthere", zindex:100, bottom:"45%", top:"auto", right:"42%", left:"auto", width: "70px", height:"auto" },
-                    {name:"aladin_orque", zindex:100, bottom:"auto", top:"35%", right:"auto", left:"32%", width: "90px", height:"auto" },  //TODO 1602 placement 
+                    {name:"aladin_orque", zindex:100, bottom:"auto", top:"30%", right:"auto", left:"46%", width: "90px", height:"auto" },  //TODO 1602 placement 
                     {name:"alexandre_serpent", zindex:100, bottom:"auto", top:"30%", right:"auto", left:"32%", width: "90px", height:"auto" },
                     {name:"allya_renard", zindex:150, bottom:"auto", top:"2%", right:"auto", left:"37%", width: "72px", height:"auto" },
                     {name:"alicia_serpent", zindex:20, bottom:"auto", top:"45%", right:"10%", left:"auto", width: "250px", height:"auto" },
@@ -76,7 +76,7 @@ var animemalBank = [{name:"abel_cafard", zindex:50, bottom:"10%", top:"auto", ri
                     {name:"falou_loup", zindex:50, bottom:"39%", top:"auto", right:"auto", left:"10%", width: "45px", height:"auto" },
                     {name:"halima", zindex:50, bottom:"23%", top:"auto", right:"23%", left:"auto", width: "88px", height:"auto" },
                     {name:"hatim_koala", zindex:100, bottom:"auto", top:"30%", right:"25%", left:"auto", width: "90px", height:"auto" }, // TODO 1602 palcement
-                    {name:"herve_elephant", zindex:100, bottom:"15%", top:"auto", right:"auto", left:"25%", width: "90px", height:"auto" }, // TODO 1602 placement
+                    {name:"herve_elephant", zindex:100, bottom:"13%", top:"auto", right:"auto", left:"22%", width: "90px", height:"auto" }, // TODO 1602 placement
                     {name:"iles_aigle", zindex:50, bottom:"auto", top:"17%", right:"auto", left:"6%", width: "90px", height:"auto" },
 /*                    {name:"jordy", zindex:50, bottom:"0%", top:"auto", right:"35%", left:"auto", width: "150px", height:"auto" }, */
                     {name:"jade_lapin", zindex:100, bottom:"24%", top:"auto", right:"auto", left:"50%", width: "40px", height:"auto" }, // TODO 1602 placement TODO
