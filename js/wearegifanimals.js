@@ -67,7 +67,8 @@ var animemalBank = [{name:"abel_cafard", zindex:50, bottom:"10%", top:"auto", ri
                     {name:"bryan_renard", zindex:50, bottom:"3%", top:"auto", right:"auto", left:"15%", width: "173px", height:"auto" },
                     {name:"carmen_coq", zindex:0, bottom:"auto", top:"15%", right:"auto", left:"28%", width: "90px", height:"auto" },
                     {name:"chanette", zindex:50, bottom:"auto", top:"16%", right:"20%", left:"auto", width: "114px", height:"auto" },
-                    {name:"clement_homard", zindex:50, bottom:"auto", top:"30%", right:"auto", left:"10%", width: "120px", height:"auto" },
+                    {name:"clement_homard", zindex:50, bottom:"auto", top:"30%", right:"auto", left:"10%", width: "120px", height:"auto" },                      
+                    {name:"damien_girafe", zindex:100, bottom:"30%", top:"auto", right:"auto", left:"32%", width: "90px", height:"auto" },
                     {name:"eddy", zindex:200, bottom:"auto", top:"43%", right:"5%", left:"auto", width: "154px", height:"auto" },
                     {name:"eline", zindex:200, bottom:"auto", top:"40%", right:"24%", left:"auto", width: "100px", height:"auto" },
                     {name:"falou_loup", zindex:50, bottom:"39%", top:"auto", right:"auto", left:"10%", width: "45px", height:"auto" },
@@ -77,6 +78,7 @@ var animemalBank = [{name:"abel_cafard", zindex:50, bottom:"10%", top:"auto", ri
                     {name:"jade_lapin", zindex:100, bottom:"auto", top:"30%", right:"auto", left:"32%", width: "90px", height:"auto" }, // TODO 1602 placement TODO
                     {name:"kaouthar_papillon", zindex:50, bottom:"auto", top:"5%", right:"43%", left:"auto", width: "90px", height:"auto" },
                     {name:"khalima_faucon", zindex:50, bottom:"auto", top:"24%", right:"auto", left:"23%", width: "60px", height:"auto" },
+                    {name:"kyrian_murene", zindex:100, bottom:"5%", top:"auto", right:"25%", left:"auto%", width: "90px", height:"auto" }, // TODO 1602 placement
                     {name:"laetitia_ours", zindex:50, bottom:"24%", top:"auto", right:"auto", left:"24%", width: "90px", height:"auto" },
                     {name:"lylou", zindex:50, bottom:"auto", top:"15%", right:"28%", left:"auto", width: "102px", height:"auto" },
                     {name:"maria_chat", zindex:150, bottom:"28%", top:"auto", right:"auto", left:"20%", width: "34px", height:"auto" },
