@@ -59,6 +59,7 @@ var sceneSoundBank =     [
       './ressources/son/kyrian_murene.mp3', //56
       './ressources/son/wassim_cobra.mp3', //57
       './ressources/son/eliamine_zebre.mp3', //58
-      './ressources/son/achille_mantre_religieuse.mp3' //59
+      './ressources/son/achille_mantre_religieuse.mp3', //59
+      './ressources/son/hatim_koala.mp3' //60
 
 ];
