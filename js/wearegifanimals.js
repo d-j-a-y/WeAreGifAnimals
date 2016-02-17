@@ -76,10 +76,10 @@ var animemalBank = [{name:"abel_cafard", zindex:50, bottom:"10%", top:"auto", ri
                     {name:"falou_loup", zindex:50, bottom:"39%", top:"auto", right:"auto", left:"10%", width: "45px", height:"auto" },
                     {name:"halima", zindex:50, bottom:"23%", top:"auto", right:"23%", left:"auto", width: "88px", height:"auto" },
                     {name:"hatim_koala", zindex:100, bottom:"auto", top:"30%", right:"25%", left:"auto", width: "90px", height:"auto" }, // TODO 1602 palcement
-                    {name:"herve_elephant", zindex:100, bottom:"24%", top:"auto", right:"auto", left:"50%", width: "90px", height:"auto" }, // TODO 1602 placement
+                    {name:"herve_elephant", zindex:100, bottom:"15%", top:"auto", right:"auto", left:"25%", width: "90px", height:"auto" }, // TODO 1602 placement
                     {name:"iles_aigle", zindex:50, bottom:"auto", top:"17%", right:"auto", left:"6%", width: "90px", height:"auto" },
 /*                    {name:"jordy", zindex:50, bottom:"0%", top:"auto", right:"35%", left:"auto", width: "150px", height:"auto" }, */
-                    {name:"jade_lapin", zindex:100, bottom:"24%", top:"auto", right:"auto", left:"43%", width: "40px", height:"auto" }, // TODO 1602 placement TODO
+                    {name:"jade_lapin", zindex:100, bottom:"24%", top:"auto", right:"auto", left:"50%", width: "40px", height:"auto" }, // TODO 1602 placement TODO
                     {name:"kaouthar_papillon", zindex:50, bottom:"auto", top:"5%", right:"43%", left:"auto", width: "90px", height:"auto" },
                     {name:"kevin_cerf", zindex:100, bottom:"30%", top:"auto", right:"33%", left:"auto", width: "90px", height:"auto" }, // TODO 1602 placement                   
                     {name:"khalima_faucon", zindex:50, bottom:"auto", top:"24%", right:"auto", left:"23%", width: "60px", height:"auto" },
