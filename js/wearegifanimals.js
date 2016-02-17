@@ -74,7 +74,7 @@ var animemalBank = [{name:"abel_cafard", zindex:50, bottom:"10%", top:"auto", ri
                     {name:"eliamine_zebre", zindex:100, bottom:"33%", top:"auto", right:"auto", left:"47%", width: "90px", height:"auto" }, // TODO 1602 placement
                     {name:"eline", zindex:200, bottom:"auto", top:"40%", right:"24%", left:"auto", width: "100px", height:"auto" },              
                     {name:"falou_loup", zindex:50, bottom:"39%", top:"auto", right:"auto", left:"10%", width: "45px", height:"auto" },
-                    {name:"halima", zindex:50, bottom:"23%", top:"auto", right:"23%", left:"auto", width: "88px", height:"auto" },
+                    {name:"halima", zindex:50, bottom:"20%", top:"auto", right:"19%", left:"auto", width: "88px", height:"auto" },
                     {name:"hatim_koala", zindex:100, bottom:"auto", top:"28%", right:"29%", left:"auto", width: "90px", height:"auto" }, // TODO 1602 palcement
                     {name:"herve_elephant", zindex:100, bottom:"13%", top:"auto", right:"auto", left:"22%", width: "90px", height:"auto" }, // TODO 1602 placement
                     {name:"iles_aigle", zindex:50, bottom:"auto", top:"17%", right:"auto", left:"6%", width: "90px", height:"auto" },
@@ -83,7 +83,7 @@ var animemalBank = [{name:"abel_cafard", zindex:50, bottom:"10%", top:"auto", ri
                     {name:"kaouthar_papillon", zindex:50, bottom:"auto", top:"5%", right:"43%", left:"auto", width: "90px", height:"auto" },
                     {name:"kevin_cerf", zindex:100, bottom:"30%", top:"auto", right:"33%", left:"auto", width: "90px", height:"auto" }, // TODO 1602 placement                   
                     {name:"khalima_faucon", zindex:50, bottom:"auto", top:"24%", right:"auto", left:"23%", width: "60px", height:"auto" },
-                    {name:"kyrian_murene", zindex:100, bottom:"3%", top:"auto", right:"20%", left:"auto%", width: "90px", height:"auto" }, // TODO 1602 placement
+                    {name:"kyrian_murene", zindex:100, bottom:"3%", top:"auto", right:"23%", left:"auto%", width: "90px", height:"auto" }, // TODO 1602 placement
                     {name:"laetitia_ours", zindex:50, bottom:"24%", top:"auto", right:"auto", left:"24%", width: "90px", height:"auto" },
                     {name:"lylou", zindex:50, bottom:"auto", top:"15%", right:"28%", left:"auto", width: "102px", height:"auto" },
                     {name:"maria_chat", zindex:150, bottom:"28%", top:"auto", right:"auto", left:"20%", width: "34px", height:"auto" },
