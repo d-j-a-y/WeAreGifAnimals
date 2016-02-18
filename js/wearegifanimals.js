@@ -180,7 +180,8 @@ function updateProgressBar() {
   progressbar = progressbar+1;
 
   currentVal = parseInt(document.getElementById("sliderbar").style.width);
-  console.log("lenght " + currentVal);
+  //DEBUG
+  //  console.log("lenght " + currentVal);
 	if(!progressbarHide && currentVal>=90){
 		var progressClasses = document.getElementById("progress").className + " " + "hidetransition";
 		document.getElementById("progress").className = progressClasses;
