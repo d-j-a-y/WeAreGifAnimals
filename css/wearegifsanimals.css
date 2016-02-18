@@ -1,5 +1,7 @@
 
-
+/***********************************/
+/* General User Interface for WAGA */
+/***********************************/
 body {
 	background-image: url(../ressources/fond/bg_hublot.jpeg);
 	background-repeat:no-repeat;
@@ -9,6 +11,136 @@ body {
 	-moz-background-size: cover;
 	-webkit-background-size: cover;
 	background-size: cover;
+}
+
+#flipbgdroite{
+
+background-image: url(../ressources/ui/icon-next_right.png);
+background-repeat:no-repeat;
+position: fixed;
+top: 30px;
+right: 40px;
+width: 40px;
+height: 20px;
+
+z-index:800;
+
+}
+#flipbgdroite:hover{
+background-image: url(../ressources/ui/icon-next_right_hover.png);
+background-repeat:no-repeat;
+}
+
+#flipbggauche{
+
+background-image: url(../ressources/ui/icon-next_left.png);
+background-repeat:no-repeat;
+position: fixed;
+top: 50px;
+right: 60px;
+width: 40px;
+height: 20px;
+
+z-index:800;
+}
+#flipbggauche:hover{
+background-image: url(../ressources/ui/icon-next_left_hover.png);
+background-repeat:no-repeat;
+
+}
+
+#cleanscene{
+background-image: url(../ressources/ui/icon-reload.png);
+background-repeat:no-repeat;
+position: fixed;
+top: 40px;
+left: 40px;
+width: 40px;
+height: 40px;
+
+z-index:800;
+}
+#cleanscene:hover{
+background-image: url(../ressources/ui/icon-reload_hover.png);
+
+}
+
+div.fileinputs {
+  background-image: url(../ressources/ui/icon-load_image.png);
+  background-repeat:no-repeat;
+  bottom: 40px;
+  left: 40px;
+  width: 40px;
+  height: 40px;
+	position: fixed;
+
+  z-index:800;
+}
+div.fileinputs:hover {
+  background-image: url(../ressources/ui/icon-load_image_hover.png);
+  background-repeat:no-repeat;
+}
+
+div.fakefile {
+  opacity: 0;
+	z-index: 1;
+}
+
+input.file {
+	position: relative;
+	text-align: right;
+	-moz-opacity:0 ;
+	filter:alpha(opacity: 0);
+	opacity: 0;
+	z-index: 2;
+}
+
+/* Actually not used, and toogle sound is by navigator tab ui*/
+/*
+#togglesound{
+background-image: url(../ressources/ui/audio-volume-high.png);
+background-repeat:no-repeat;
+position: fixed;
+bottom: 40px;
+left: 40px;
+width: 40px;
+height: 40px;
+
+z-index:800;
+}
+#togglesound:hover{
+background-image: url(../ressources/ui/audio-volume-muted.png);
+}
+*/
+
+#menubas
+{
+	background-image: url(../ressources/ui/artmobilis.png);
+	background-repeat:no-repeat;
+	background-size: 100%;
+	position: fixed;
+	bottom: 10px;
+	right: 40px;
+	width: 260px;
+	height: 125px;
+
+	z-index:800;
+}
+
+#menubas:hover
+{
+	background-image: url(../ressources/ui/artmobilis-nb.png);
+}
+
+/***********************************/
+/* ANIMEMALS and elements */
+/***********************************/
+
+.animemal {
+	position:fixed;
+}
+.animemal img {
+	width: 100%;
 }
 
 .corner {
@@ -70,13 +202,9 @@ body {
 	visibility: hidden;
 }
 
-.animemal {
-	position:fixed;
-}
-.animemal img {
-	width: 100%;
-	
-}
+/***********************************/
+/* ProgressBar and elements */
+/***********************************/
 
 #loading{
 z-index:800;
@@ -118,76 +246,13 @@ transition: all 2s ease;
     top: -16px;
 }
 
-#flipbgdroite{
-
-background-image: url(../ressources/ui/flipbg-right.png);
-background-repeat:no-repeat;
-position: fixed;
-top: 40px;
-right: 40px;
-width: 20px;
-height: 20px;
-
-z-index:800; 
-
-}
-#flipbgdroite:hover{
-		right: 35px;
-}
-
-#flipbggauche{
-
-background-image: url(../ressources/ui/flipbg-left.png);
-background-repeat:no-repeat;
-position: fixed;
-top: 40px;
-right: 60px;
-width: 20px;
-height: 20px;
-
-z-index:800;
-
-}
-#flipbggauche:hover{
-	right: 65px;
-}
-
-#cleanscene{
-background-image: url(../ressources/ui/icon-clean.png);
-background-repeat:no-repeat;
-position: fixed;
-top: 40px;
-left: 40px;
-width: 40px;
-height: 40px;
-
-z-index:800;
-}
-#cleanscene:hover{
-background-image: url(../ressources/ui/icon-clean-r.png);
-
-}
-
-#togglesound{
-background-image: url(../ressources/ui/audio-volume-high.png);
-background-repeat:no-repeat;
-position: fixed;
-bottom: 40px;
-left: 40px;
-width: 40px;
-height: 40px;
-
-z-index:800;
-}
-#togglesound:hover{
-background-image: url(../ressources/ui/audio-volume-muted.png);
-}
-
+/****************************************/
+/* Format of the hidden side of the moon */
+/*****************************************/
 h3
 {
 	font-size : 80%;	
 }
-
 
 div.menuhaut
 {
@@ -250,23 +315,4 @@ div.menuhaut span.cite
 {
 	vertical-align : top;
 	font-size: 60%;
-}
-
-#menubas
-{
-	background-image: url(../ressources/ui/artmobilis.png);
-	background-repeat:no-repeat;
-	background-size: 100%;
-	position: fixed;
-	bottom: 10px;
-	right: 40px;
-	width: 260px;
-	height: 125px;
-
-	z-index:800; 
-}
-
-#menubas:hover
-{
-	background-image: url(../ressources/ui/artmobilis-nb.png);
 }

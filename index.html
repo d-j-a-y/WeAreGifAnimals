@@ -3,7 +3,7 @@
 <title>We Are Gifs Animals</title>
 <meta name="generator" content="Bluefish 2.2.6" >
 <meta name="author" content="Jérôme Blanchi @ TML & Xavier Dubourdieu">
-<meta name="date" content="2016-02-18T17:35:10+0100" >
+<meta name="date" content="2016-02-18T23:58:08+0100" >
 <meta name="copyright" content="">
 <meta name="keywords" content="art, reecriture, rewrite, remake, gif, gifs, chat, cat">
 <meta name="description" content="Le bestiaire dans l'Histoire de l'Art, de Jérôme Bosh à We are just animals d'Olaf Breuning, l'animal 
@@ -26,19 +26,13 @@
 </head>
 
 <!-- <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> -->
-
+<!-- -->
 <body id="fond" style="background-image: url(./ressources/fond/bg_lastation.jpeg)"
   onload="initAudioApiSupport('./ressources/son/ambianceRUE.mp3',sceneSoundBank)"
 >
 
 <!-- Test script capacities-->
-<script>	
-
-function updateProgressBarSansJQuery(){ 
-/*??TODO to fix progress bar not hide???*/
-}
-
-</script>
+<script>	</script>
 <noscript>Sorry, your browser does not support JavaScript!</noscript>
 
 <div id="progress"> 
@@ -639,23 +633,29 @@ document.body.appendChild(animalus);
 	</div>
 	
 	<!-- FIN GROUPES -->		<!-- FIN GROUPES -->		<!-- FIN GROUPES -->		<!-- FIN GROUPES -->		<!-- FIN GROUPES -->	
-	<!-- FIN GROUPES -->		<!-- FIN GROUPES -->		<!-- FIN GROUPES -->		<!-- FIN GROUPES -->		<!-- FIN GROUPES -->	
-	<!-- FIN GROUPES -->		<!-- FIN GROUPES -->		<!-- FIN GROUPES -->	
-	<!-- FIN GROUPES -->		<!-- FIN GROUPES -->	
-				
-
+	<!-- UI UI UI UI -->		<!-- UI UI UI UI -->		<!-- UI UI UI UI -->		<!-- UI UI UI UI -->		<!-- UI UI UI UI -->	
 
 <!-- bouton de reinitialisation-->
-	<div class="cleanscene uielements" id="cleanscene" onclick="cleanScene()"></div>
+<div class="cleanscene uielements" id="cleanscene" onclick="cleanScene()"></div>
 
 <!-- boutons de changement de fond-->	
-	<div class="flipbg uielements" id="flipbgdroite" onclick="changebackground(1)"></div>
-	<div class="flipbg uielements" id="flipbggauche" onclick="changebackground(-1)"></div>
+<div class="flipbg uielements" id="flipbgdroite" onclick="changebackground(1)"></div>
+<div class="flipbg uielements" id="flipbggauche" onclick="changebackground(-1)"></div>
+
+<!-- bouton de changement de fond-->
+<div class="fileinputs">
+  <input type="file" class="file" id="image_input" accept="image/*" onchange="handleFiles(this.files)">
+	<div class="fakefile">
+		<input />
+	</div>
+</div>
 
 <!-- bouton de bascule son-->
 <!-- TODO -->
 <!-- 	<div class="togglesound uielements" id="togglesound" onclick="toggleSound()"></div> -->
 
+	<!-- NOTE NOTE -->		<!-- NOTE NOTE -->		<!-- NOTE NOTE -->		<!-- NOTE NOTE -->		<!-- NOTE NOTE -->	
+	<!-- NOTE NOTE -->		<!-- NOTE NOTE -->		<!-- NOTE NOTE -->		<!-- NOTE NOTE -->		<!-- NOTE NOTE -->	
 
 <!-- Données de la page de présentation de l'atelier -->
 <!-- Menu 1 : Note d'intention -->

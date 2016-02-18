@@ -266,6 +266,26 @@ function changebackground(direction){
 	document.body.style.backgroundImage = "url(" + backgroundBank[currentBackground].url + ")";
 }
 
+function changebackgroundURL(file){
+	// Change the background image
+	//DEBUG
+	console.log("file : " + file);
+  var reader = new FileReader();
+
+  // Closure to capture the file information.
+  reader.onload = (function(theFile) {
+    return function(e) {
+      document.body.style.backgroundImage = "url(" + e.target.result+ ")";
+    };
+  })(file);
+
+  // Read in the image file as a data URL.
+  reader.readAsDataURL(file);
+
+//	var urlfile = window.URL.createObjectURL(file);
+//	document.body.style.backgroundImage = urlfile;
+}
+
 // Update the scene to context client screen
 function updateSceneSize() {
 	
@@ -512,4 +532,17 @@ function getImageCentre( image ) {
 
   // Return the calculated centre coordinates
   return Array( imageCentreX, imageCentreY );
+}
+
+// called on onChange of the file input for using local background
+function handleFiles(file) {
+  var fileList = file;
+  var imageType = /^image\//;
+  if (fileList.length != 0 )
+  {
+    if (imageType.test(file[0].type))
+    {
+      changebackgroundURL(file[0]);
+    }
+  }
 }
