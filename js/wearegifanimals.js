@@ -24,6 +24,8 @@
 /* startRotate, stopRotate, rotateImage & getImageCentre  functions are             */
 /* adapted from http://www.elated.com/articles/smooth-rotatable-images-css3-jquery/ */
 /*                                                                                  */
+/* drawProgressBar function is adapted from                                         */
+/* http://html5css3jscript.com/the-most-simple-progress-bar/                        */
 /************************************************************************************/
 
 var FLAG_SCENE_STATION = 1; //00000001
@@ -48,11 +50,11 @@ var currentBackground = 0;                      // The actual background image i
 var maxBackground = 0;                          // Size of the backgroundBank initialized in document.ready
 
 var animemalBank = [{name:"abel_cafard", zindex:50, bottom:"10%", top:"auto", right:"auto", left:"3%", width: "66px", height:"auto" },
-                    {name:"achille_mantre_religieuse", zindex:50, bottom:"auto", top:"2%", right:"auto", left:"15%", width: "100px", height:"auto" }, // TODO 1602 placemnt
+                    {name:"achille_mantre_religieuse", zindex:50, bottom:"auto", top:"2%", right:"auto", left:"15%", width: "100px", height:"auto" },
                     {name:"adam-croco", zindex:20, bottom:"10%", top:"auto", right:"auto", left:"40%", width: "135px", height:"auto" },
                     {name:"adam-p_ours", zindex:100, bottom:"37%", top:"auto", right:"auto", left:"3%", width: "56px", height:"auto" },
                     {name:"adam_panthere", zindex:100, bottom:"45%", top:"auto", right:"42%", left:"auto", width: "70px", height:"auto" },
-                    {name:"aladin_orque", zindex:100, bottom:"auto", top:"30%", right:"auto", left:"46%", width: "90px", height:"auto" },  //TODO 1602 placement 
+                    {name:"aladin_orque", zindex:100, bottom:"auto", top:"30%", right:"auto", left:"46%", width: "90px", height:"auto" },
                     {name:"alexandre_serpent", zindex:100, bottom:"auto", top:"30%", right:"auto", left:"32%", width: "90px", height:"auto" },
                     {name:"allya_renard", zindex:150, bottom:"auto", top:"2%", right:"auto", left:"37%", width: "72px", height:"auto" },
                     {name:"alicia_serpent", zindex:20, bottom:"auto", top:"45%", right:"10%", left:"auto", width: "250px", height:"auto" },
@@ -68,22 +70,22 @@ var animemalBank = [{name:"abel_cafard", zindex:50, bottom:"10%", top:"auto", ri
                     {name:"bryan_renard", zindex:50, bottom:"3%", top:"auto", right:"auto", left:"15%", width: "173px", height:"auto" },
                     {name:"carmen_coq", zindex:0, bottom:"auto", top:"15%", right:"auto", left:"28%", width: "90px", height:"auto" },
                     {name:"chanette", zindex:50, bottom:"auto", top:"16%", right:"20%", left:"auto", width: "114px", height:"auto" },
-                    {name:"clement_homard", zindex:50, bottom:"auto", top:"30%", right:"auto", left:"10%", width: "120px", height:"auto" },                      
+                    {name:"clement_homard", zindex:50, bottom:"auto", top:"30%", right:"auto", left:"10%", width: "120px", height:"auto" },
                     {name:"damien_girafe", zindex:100, bottom:"28%", top:"auto", right:"auto", left:"36%", width: "90px", height:"auto" },
                     {name:"eddy", zindex:200, bottom:"auto", top:"43%", right:"5%", left:"auto", width: "154px", height:"auto" },
-                    {name:"eliamine_zebre", zindex:100, bottom:"33%", top:"auto", right:"auto", left:"47%", width: "90px", height:"auto" }, // TODO 1602 placement
-                    {name:"eline", zindex:200, bottom:"auto", top:"40%", right:"24%", left:"auto", width: "100px", height:"auto" },              
+                    {name:"eliamine_zebre", zindex:100, bottom:"33%", top:"auto", right:"auto", left:"47%", width: "90px", height:"auto" },
+                    {name:"eline", zindex:200, bottom:"auto", top:"40%", right:"24%", left:"auto", width: "100px", height:"auto" },
                     {name:"falou_loup", zindex:50, bottom:"39%", top:"auto", right:"auto", left:"10%", width: "45px", height:"auto" },
                     {name:"halima", zindex:50, bottom:"20%", top:"auto", right:"19%", left:"auto", width: "88px", height:"auto" },
-                    {name:"hatim_koala", zindex:100, bottom:"auto", top:"28%", right:"29%", left:"auto", width: "90px", height:"auto" }, // TODO 1602 palcement
-                    {name:"herve_elephant", zindex:100, bottom:"13%", top:"auto", right:"auto", left:"22%", width: "90px", height:"auto" }, // TODO 1602 placement
+                    {name:"hatim_koala", zindex:100, bottom:"auto", top:"28%", right:"29%", left:"auto", width: "90px", height:"auto" },
+                    {name:"herve_elephant", zindex:100, bottom:"13%", top:"auto", right:"auto", left:"22%", width: "90px", height:"auto" },
                     {name:"iles_aigle", zindex:50, bottom:"auto", top:"17%", right:"auto", left:"6%", width: "90px", height:"auto" },
 /*                    {name:"jordy", zindex:50, bottom:"0%", top:"auto", right:"35%", left:"auto", width: "150px", height:"auto" }, */
-                    {name:"jade_lapin", zindex:100, bottom:"24%", top:"auto", right:"auto", left:"50%", width: "40px", height:"auto" }, // TODO 1602 placement TODO
+                    {name:"jade_lapin", zindex:100, bottom:"24%", top:"auto", right:"auto", left:"50%", width: "40px", height:"auto" },
                     {name:"kaouthar_papillon", zindex:50, bottom:"auto", top:"5%", right:"43%", left:"auto", width: "90px", height:"auto" },
-                    {name:"kevin_cerf", zindex:100, bottom:"30%", top:"auto", right:"33%", left:"auto", width: "90px", height:"auto" }, // TODO 1602 placement                   
+                    {name:"kevin_cerf", zindex:100, bottom:"30%", top:"auto", right:"33%", left:"auto", width: "90px", height:"auto" },
                     {name:"khalima_faucon", zindex:50, bottom:"auto", top:"24%", right:"auto", left:"23%", width: "60px", height:"auto" },
-                    {name:"kyrian_murene", zindex:100, bottom:"3%", top:"auto", right:"23%", left:"auto%", width: "90px", height:"auto" }, // TODO 1602 placement
+                    {name:"kyrian_murene", zindex:100, bottom:"3%", top:"auto", right:"23%", left:"auto%", width: "90px", height:"auto" },
                     {name:"laetitia_ours", zindex:50, bottom:"24%", top:"auto", right:"auto", left:"24%", width: "90px", height:"auto" },
                     {name:"lylou", zindex:50, bottom:"auto", top:"15%", right:"28%", left:"auto", width: "102px", height:"auto" },
                     {name:"maria_chat", zindex:150, bottom:"28%", top:"auto", right:"auto", left:"20%", width: "34px", height:"auto" },
@@ -107,7 +109,7 @@ var animemalBank = [{name:"abel_cafard", zindex:50, bottom:"10%", top:"auto", ri
                     {name:"tasmia_pingouin", zindex:50, bottom:"24%", top:"auto", right:"28%", left:"auto", width: "70px", height:"auto" , flagscene:~FLAG_SCENE_STATION },
                     {name:"wadah", zindex:150, bottom:"23%", top:"auto", right:"12%", left:"auto", width: "85px", height:"auto" },
                     {name:"wallid", zindex:150, bottom:"10%", top:"auto", right:"8%", left:"auto", width: "60px", height:"auto" },
-                    {name:"wassim_cobra", zindex:100, bottom:"24%", top:"auto", right:"auto", left:"7%", width: "90px", height:"auto" },  // TODO 1602 placement                  
+                    {name:"wassim_cobra", zindex:100, bottom:"24%", top:"auto", right:"auto", left:"7%", width: "110px", height:"auto" },
                     {name:"xavier", zindex:150, bottom:"auto", top:"3%", right:"8%", left:"auto", width: "95px", height:"auto" },
                     {name:"xaviera_escargot", zindex:100, bottom:"24%", top:"auto", right:"auto", left:"42%", width: "80px", height:"auto" },
                     {name:"xaviera_sirene", zindex:100, bottom:"auto", top:"12%", left:"auto", right:"4%", width: "123px", height:"auto" },
@@ -162,43 +164,30 @@ $(function() {
 	updateSceneSize();
 });
 
-function updateProgressBarTest(){ 
-	var val = $('#loading strong').html(txt); 
-
-	if(parseInt(val)>=90){	$('#progress').addClass("hidetransition");}
-
-	console.log(val);
-	
-	var newVal = parseInt(val)+Math.ceil(100/animemalBank.length-1);
-	var txt = Math.ceil(newVal)+'%'; 
-	$('#loading strong').html(txt); 
+function drawProgressBar(limitLoad, indexLoad){
+	var currentLoad=Math.round((indexLoad*100)/limitLoad);
+	document.getElementById("sliderbar").style.width=currentLoad+'%';
+	document.getElementById("slidertext").innerHTML=currentLoad+'%';
 }
 
-function updateProgressBar(){ 
-	var val = $('#progress progress').attr('value'); 
-	var val2 = document.getElementById("progresselement").getAttribute('value');
-/*
-	if(val>=90){
-		$('#progress').addClass("hidetransition");
-	}
-*/
-//DEBUG
-//	console.log("val " + val + ", val2 " + val2 )
+var progressbar=0;
+var progressbarHide = false;
 
-	if(val2>=90){
+function updateProgressBar() {
+  //DEBUG
+  //  console.log("lenght " + animemalBank.length);
+  //  console.log("progresbar" + progressbar);
+  progressbar = progressbar+1;
+
+  currentVal = parseInt(document.getElementById("sliderbar").style.width);
+  console.log("lenght " + currentVal);
+	if(!progressbarHide && currentVal>=90){
 		var progressClasses = document.getElementById("progress").className + " " + "hidetransition";
 		document.getElementById("progress").className = progressClasses;
+		progressbarHide=true;
 	}
 
-	var newVal = parseInt(parseFloat(val)+parseFloat((100/(animemalBank.length-5)))); 
-
-//DEBUG
-//	console.log("newval " + newVal + "animemalBank.length" + animemalBank.length)	
-
-	if(newVal > 100) {newVal = 100;}
-	var txt = Math.ceil(newVal)+'%'; 
-	$('#progress progress').attr('value',newVal).text(txt); 
-	$('#progress strong').html(txt); 
+  drawProgressBar(animemalBank.length, progressbar);
 }
 
 function footerAfficheMenu(){

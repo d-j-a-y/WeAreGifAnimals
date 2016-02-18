@@ -87,41 +87,36 @@ width: 300px;
 margin: auto;
 }
 
-#progress > p{
-text-align: center;
-}
-
 .hidetransition{
 opacity: 0;
 transition: all 2s ease;
 }
 
-progress{ 
-display: inline-block; 
--moz-box-sizing: border-box; 
-box-sizing: border-box; 
-width: 300px; 
-height: 20px; 
-padding: 3px 3px 2px 3px; 
-background: #333; 
-background: -webkit-linear-gradient(#2d2d2d,#444); 
-background: -moz-linear-gradient(#2d2d2d,#444); 
-background: -o-linear-gradient(#2d2d2d,#444); 
-background: linear-gradient(#2d2d2d,#444); 
-border: 1px solid rgba(0,0,0,.5); 
-border-radius: 15px; 
-box-shadow: 0 1px 0 rgba(255,255,255,.2); 
+#slider{
+  opacity: 0.8;
+	width:100%;
+	height:15px;
+	border:1px solid #000;
+  border-radius: 13px;
+	overflow:hidden;
+	background: #cedce7;
 }
-
-/* Style de la barre pour Firefox*/ 
-progress::-moz-progress-bar
-{ 
-border-radius:10px; 
-background: #09c; 
-background: -moz-repeating-linear-gradient( 45deg, rgba(255,255,255,.2) 0, rgba(255,255,255,.2) 10px, rgba(255,255,255,0) 10px, rgba(255,255,255,0) 20px ), -moz-linear-gradient( rgba(255,255,255,.1) 50%, rgba(255,255,255,0) 60% ), #09c; background: repeating-linear-gradient( 45deg, rgba(255,255,255,.2) 0, rgba(255,255,255,.2) 10px, rgba(255,255,255,0) 10px, rgba(255,255,255,0) 20px ), linear-gradient( rgba(255,255,255,.1) 50%, rgba(255,255,255,0) 60% ), #09c; background-size: 300px 20px, auto, auto; background-position: -300px 0, top, top; background-position: top right, top, top; box-shadow: 0 1px 0 rgba(255,255,255,.5) inset, 0 -1px 0 rgba(0,0,0,.8) inset, 0 0 2px black; 
-} 
-/* Style de la barre pour Chrome*/ 
-progress::-webkit-progress-value{ /* Code identique mais avec les bons préfixes! */ }
+#sliderbar{
+	width:37%;
+	height:15px;
+	border-right: 1px solid #000000;
+  border-radius: 10px;
+	background: DeepSkyBlue;
+}
+#slidertext {
+	color: #000000;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bold;
+    left: 25px;
+    position: relative;
+    top: -16px;
+}
 
 #flipbgdroite{
 

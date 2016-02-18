@@ -1,12 +1,13 @@
 <html>
 <head>
-<title>OUi Are Gifs Animals</title>
+<title>We Are Gifs Animals</title>
 <meta name="generator" content="Bluefish 2.2.6" >
 <meta name="author" content="Jérôme Blanchi @ TML & Xavier Dubourdieu">
-<meta name="date" content="2016-02-17T16:34:56+0100" >
+<meta name="date" content="2016-02-18T12:19:21+0100" >
 <meta name="copyright" content="">
-<meta name="keywords" content="">
-<meta name="description" content="">
+<meta name="keywords" content="art, reecriture, rewrite, remake">
+<meta name="description" content="Le bestiaire dans l'Histoire de l'Art, de Jérôme Bosh à We are just animals d'Olaf Breuning, l'animal 
+	miroir de l'homme.">
 <meta name="ROBOTS" content="">
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
@@ -26,7 +27,9 @@
 
 <!-- <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> -->
 
-<body id="fond" style="background-image: url(./ressources/fond/bg_lastation.jpeg)" onload="initAudioApiSupport('./ressources/son/ambianceRUE.mp3',sceneSoundBank)">
+<body id="fond" style="background-image: url(./ressources/fond/bg_lastation.jpeg)"
+  onload="initAudioApiSupport('./ressources/son/ambianceRUE.mp3',sceneSoundBank)"
+>
 
 <!-- Test script capacities-->
 <script>	
@@ -39,16 +42,49 @@ function updateProgressBarSansJQuery(){
 <noscript>Sorry, your browser does not support JavaScript!</noscript>
 
 <div id="progress"> 
-	<p>Chargement...<strong>2%</strong></p> 
-	<progress id="progresselement" value="5" min="0" max="100">0%</progress> 
+		<div id="slider">
+			<div id="sliderbar">
+			</div>
+			<div id="slidertext">
+			</div>
+		</div>
 </div>
 
-<!-- Animals -->
-<!-- copie colle de la classe est creation du style associé "nompersonage" -->
-<!-- La taille du gif est dans wearegifanimals.js -->
-<!-- ajout du nouveau SON dans la banque de son et incrementation index 
-<!-- IDEE : index playsound : nom pas chiffre ??? -->
-<!-- IDEE : Function de creation des zanimaux a partir d'un jolie tableau! -->	
+ <!-- Animals -->
+<!--Voir ./scripts/waga.sh-->
+<!-- * copie colle la classe -->
+<!-- * creation du style associé "nompersonage" ./css/waga_personnage.css -->
+<!-- * La taille du gif est dans ./js/wearegifanimals.js -->
+<!-- * ajout du nouveau SON dans la banque de son et incrementation index ./js/waga_son.js -->
+
+<!-- IDEE -->
+<!-- index playsound : nom pas chiffre ??? -->
+<!-- Function de creation des zanimaux a partir d'un jolie tableau! -->
+<!--
+
+Voir : begin js 3rd / 534
+function createZanimaux(sName, aButtons)
+{
+var animalus = document.createElement(“div”);
+animalus.id = sName;
+animalus.className = “animemals”;
+for (var i = 0; i < aButtons.length; i++)
+{
+var thisButton = aButtons[i];
+var button = document.createElement(“span”);
+var icon = document.createElement(“img”);
+//more code here
+button.setAttribute(“href”, thisButton[1]);
+button.className = “toolbar-button”;
+icon.src = thisButton[0];
+icon.className = “toolbar-icon”;
+button.appendChild(icon);
+toolbar.appendChild(button);
+}
+document.body.appendChild(animalus);
+}-->
+
+<!-- Selection des visible par tableau (flags) -->
 
 	<!-- DEBUT GROUPE HUBLOT Fevrier 2016 -->	<!-- DEBUT GROUPE HUBLOT Fevrier 2016 --> <!-- DEBUT GROUPE HUBLOT Fevrier 2016 -->
 		<!-- DEBUT GROUPE HUBLOT Fevrier 2016 --> <!-- DEBUT GROUPE HUBLOT Fevrier 2016 --> <!-- DEBUT GROUPE HUBLOT Fevrier 2016 -->
@@ -315,7 +351,7 @@ function updateProgressBarSansJQuery(){
 		 <div class="corner BR resizeui"></div>
 	</div>
 	
-	<div class="resizable draggable animemal arthus_chat" id="" onmouseover="playSound(27);"  onmouseout="stopSound(27);">
+	<div class="resizable draggable animemal arthus_chat" id="" onmouseover="playSound(33);"  onmouseout="stopSound(33);">
 		<img src="./ressources/arthus_phoque.gif" onload="updateProgressBar()" alt="" > 
 		 <div class="corner TL rotatable"></div>
 		 <div class="corner TR"></div>
@@ -892,7 +928,7 @@ handler for the load and unload events, you’d write the following
 <script type="text/javascript" src="./js/waga_son.js"></script>
 <!-- Gestion des ressources sonores -->
 <script type="text/javascript" src="./js/webaudioapi/audioapi.js"></script>
-<script type="text/javascript" src="./js/webaudioapi/buffer-loader.js"></script> 
+<script type="text/javascript" src="./js/webaudioapi/buffer-loader.js"></script>
 
 </body>
 </html>
