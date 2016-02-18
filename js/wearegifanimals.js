@@ -269,15 +269,15 @@ function changebackground(direction){
 // Update the scene to context client screen
 function updateSceneSize() {
 	
-	var factor = 0.5;
+	var factor = 0.3;
 	if (document.body.clientWidth > 1800){
-		factor = 1.3;
+		factor = 1.1;
 	}else if (document.body.clientWidth > 1000){
-		factor = 1;
-	}else if (document.body.clientWidth > 800){
 		factor = 0.8;
-	}else if (document.body.clientWidth > 600){
+	}else if (document.body.clientWidth > 800){
 		factor = 0.6;
+	}else if (document.body.clientWidth > 600){
+		factor = 0.5;
 	}
 	
 	if (factor != currentFactor){
