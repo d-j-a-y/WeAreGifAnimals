@@ -140,7 +140,7 @@ $(function() {
 		$.data(elementParent, 'currentRotation', 0 ); 
 		$(this).mousedown( startRotate );
 	});
-    
+
 	// Add an event handler to stop the rotation when the mouse button is released
 	$(document).mouseup( stopRotate );
 	
@@ -160,7 +160,7 @@ $(function() {
 	menuHautOriginalFontSize = parseInt($('a.menuhaut').css('font-size'));
 
 	//selectAnimemalsByScene();
-	resetAnimemalsPosition();	
+	resetAnimemalsPosition();
 	updateSceneSize();
 });
 
@@ -269,21 +269,18 @@ function changebackground(direction){
 function changebackgroundURL(file){
 	// Change the background image
 	//DEBUG
-	console.log("file : " + file);
-  var reader = new FileReader();
+	//console.log("file : " + file);
+	var reader = new FileReader();
 
-  // Closure to capture the file information.
-  reader.onload = (function(theFile) {
-    return function(e) {
-      document.body.style.backgroundImage = "url(" + e.target.result+ ")";
-    };
-  })(file);
+	// Closure to capture the file information.
+	reader.onload = (function(theFile) {
+		return function(e) {
+			document.body.style.backgroundImage = "url(" + e.target.result+ ")";
+    		};
+  	})(file);
 
-  // Read in the image file as a data URL.
-  reader.readAsDataURL(file);
-
-//	var urlfile = window.URL.createObjectURL(file);
-//	document.body.style.backgroundImage = urlfile;
+	// Read in the image file as a data URL.
+	reader.readAsDataURL(file);
 }
 
 // Update the scene to context client screen
@@ -534,15 +531,16 @@ function getImageCentre( image ) {
   return Array( imageCentreX, imageCentreY );
 }
 
-// called on onChange of the file input for using local background
+// Handler of onChange event from the file input used for user background
+// param : list of selected file Objects. Use only first image if exist
 function handleFiles(file) {
   var fileList = file;
   var imageType = /^image\//;
   if (fileList.length != 0 )
   {
-    if (imageType.test(file[0].type))
+//    if (imageType.test(fileList[0].type))
     {
-      changebackgroundURL(file[0]);
+      changebackgroundURL(fileList[0]);
     }
   }
 }
