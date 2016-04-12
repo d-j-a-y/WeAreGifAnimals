@@ -5,7 +5,7 @@ __(en)__ Interactive gif picture. Collaborative and creative work from child wor
 
 Tableau interactif de gif. Création collaborative issue d'une série d'ateliers d'enfants.
 
-__WE ARE GIF ANIMALS__, propose de se réapproprier la pièce d'[__Olaf Beuning__](https://en.wikipedia.org/wiki/Olaf_Breuning) [We are just animals](http://olafbreuningphoto.tumblr.com/post/22454770569/2005-we-are-just-animals-c-print-120-x-150-cm) pour en proposer une version interactive visible sur un site web et en réalité augmentée dans l'espace public le __1 Juin 2016 place Garibaldi à Nice__.
+__WE ARE GIF ANIMALS__, propose de se réapproprier la pièce d'[__Olaf Breuning__](https://en.wikipedia.org/wiki/Olaf_Breuning) [We are just animals](http://olafbreuningphoto.tumblr.com/post/22454770569/2005-we-are-just-animals-c-print-120-x-150-cm) pour en proposer une version interactive visible sur un site web et en réalité augmentée dans l'espace public le __1 Juin 2016 place Garibaldi à Nice__.
 
 ![WeAreGifAnimals (at) La Station](/README_files/Waga_LaStation.jpg)
 

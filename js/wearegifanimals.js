@@ -538,7 +538,6 @@ function handleFiles(file) {
   var imageType = /^image\//;
   if (fileList.length != 0 )
   {
-//    if (imageType.test(fileList[0].type))
     {
       changebackgroundURL(fileList[0]);
     }
