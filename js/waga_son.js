@@ -69,6 +69,7 @@ var sceneSoundBank =     [
       './ressources/son/aminata_mantris.mp3',  //66 
       './ressources/son/leny_morue.mp3',  //67 
       './ressources/son/brandon_singe.mp3',  //68 
-      './ressources/son/fabien_hyene.mp3'  //69 
+      './ressources/son/fabien_hyene.mp3',  //69 
+      './ressources/son/evan_pandaroux.mp3'  //70 
 <!--WAGA_NEW_ANIMEMAL-->
 ];
