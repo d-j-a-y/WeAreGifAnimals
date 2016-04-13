@@ -49,7 +49,10 @@ var backgroundBank =     [
 var currentBackground = 0;                      // The actual background image index from backgroundBank table
 var maxBackground = 0;                          // Size of the backgroundBank initialized in document.ready
 
-var animemalBank = [{name:"abel_cafard", zindex:50, bottom:"10%", top:"auto", right:"auto", left:"3%", width: "66px", height:"auto" },
+var animemalBank = [
+<!--WAGA_NEW_ANIMEMAL-->
+                    {name:"anais_CHOUETTE", zindex:100, bottom:"auto", top:"45%", right:"auto", left:"25%", width: "90px", height:"auto" },
+                    {name:"abel_cafard", zindex:50, bottom:"10%", top:"auto", right:"auto", left:"3%", width: "66px", height:"auto" },
                     {name:"achille_mantre_religieuse", zindex:50, bottom:"auto", top:"2%", right:"auto", left:"15%", width: "100px", height:"auto" },
                     {name:"adam-croco", zindex:20, bottom:"10%", top:"auto", right:"auto", left:"40%", width: "135px", height:"auto" },
                     {name:"adam-p_ours", zindex:100, bottom:"37%", top:"auto", right:"auto", left:"3%", width: "56px", height:"auto" },

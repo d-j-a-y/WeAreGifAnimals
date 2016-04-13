@@ -63,6 +63,7 @@ var sceneSoundBank =     [
       './ressources/son/hatim_koala.mp3', //60
       './ressources/son/herve_elephant.mp3', //61      
       './ressources/son/kevin_cerf.mp3', //62
-      './ressources/son/rayan_scorpion.mp3' //63
-
+      './ressources/son/rayan_scorpion.mp3', //63
+      './ressources/son/anais_CHOUETTE.mp3'  //64 
+<!--WAGA_NEW_ANIMEMAL-->
 ];
