@@ -65,5 +65,6 @@ var sceneSoundBank =     [
       './ressources/son/kevin_cerf.mp3', //62
       './ressources/son/rayan_scorpion.mp3', //63
       './ressources/son/anais_CHOUETTE.mp3'  //64 
+      './ressources/son/milo_calamar.mp3',  //65 
 <!--WAGA_NEW_ANIMEMAL-->
 ];
