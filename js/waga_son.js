@@ -64,13 +64,15 @@ var sceneSoundBank =     [
       './ressources/son/herve_elephant.mp3', //61      
       './ressources/son/kevin_cerf.mp3', //62
       './ressources/son/rayan_scorpion.mp3', //63
-      './ressources/son/anais_CHOUETTE.mp3'  //64 
+      './ressources/son/anais_CHOUETTE.mp3',  //64 
       './ressources/son/milo_calamar.mp3',  //65 
       './ressources/son/aminata_mantris.mp3',  //66 
       './ressources/son/leny_morue.mp3',  //67 
       './ressources/son/brandon_singe.mp3',  //68 
       './ressources/son/fabien_hyene.mp3',  //69 
       './ressources/son/evan_pandaroux.mp3',  //70 
-      './ressources/son/arno_alligatore.mp3'  //71 
+      './ressources/son/arno_alligatore.mp3',  //71 
+      './ressources/son/jerome_suricate.mp3',  //72 
+      './ressources/son/tom_ornithorynque.mp3'  //73 
 <!--WAGA_NEW_ANIMEMAL-->
 ];
