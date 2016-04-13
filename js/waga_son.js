@@ -73,6 +73,7 @@ var sceneSoundBank =     [
       './ressources/son/evan_pandaroux.mp3',  //70 
       './ressources/son/arno_alligatore.mp3',  //71 
       './ressources/son/jerome_suricate.mp3',  //72 
-      './ressources/son/tom_ornithorynque.mp3'  //73 
+      './ressources/son/tom_ornithorynque.mp3',  //73 
+      './ressources/son/zoe_limace.mp3'  //74 
 <!--WAGA_NEW_ANIMEMAL-->
 ];
