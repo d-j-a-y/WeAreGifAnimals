@@ -70,6 +70,7 @@ var sceneSoundBank =     [
       './ressources/son/leny_morue.mp3',  //67 
       './ressources/son/brandon_singe.mp3',  //68 
       './ressources/son/fabien_hyene.mp3',  //69 
-      './ressources/son/evan_pandaroux.mp3'  //70 
+      './ressources/son/evan_pandaroux.mp3',  //70 
+      './ressources/son/arno_alligatore.mp3'  //71 
 <!--WAGA_NEW_ANIMEMAL-->
 ];
