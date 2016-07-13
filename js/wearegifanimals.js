@@ -51,6 +51,7 @@ var maxBackground = 0;                          // Size of the backgroundBank in
 
 var animemalBank = [
 <!--WAGA_NEW_ANIMEMAL-->
+                    {name:"joan_fourmie", zindex:100, bottom:"28%", top:"auto", right:"auto", left:"1%", width: "90px", height:"auto" },
                     {name:"florent_chaton", zindex:100, bottom:"auto", top:"13%", right:"35%", left:"auto", width: "90px", height:"auto" },
                     {name:"zoe_limace", zindex:100, bottom:"30%", top:"auto", right:"40%", left:"auto", width: "90px", height:"auto" },
                     {name:"tom_ornithorynque", zindex:100, bottom:"10%", top:"auto", right:"20%", left:"auto", width: "90px", height:"auto" },
