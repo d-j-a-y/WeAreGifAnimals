@@ -61,7 +61,7 @@ index=$2
 match='<!--WAGA_NEW_ANIMEMAL-->'
 
 WagaHTML=$(cat <<EOF
-<div class=\"resizable draggable animemal $1\" id=\"\" onmouseover=\"playSound($index);\"  onmouseout=\"stopSound($index);\">\n\\
+<div class=\"resizable blockuserselect draggable animemal $1\" id=\"\" onmouseover=\"playSound($index);\"  onmouseout=\"stopSound($index);\">\n\\
   \t<img src=\".\/ressources\/$1.gif\" onload=\"updateProgressBar()\" alt=\"\" >\n\\
   \t<div class=\"corner TL rotatable\"><\/div>\n\\
   \t<div class=\"corner TR\"><\/div>\n\\
