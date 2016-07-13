@@ -138,6 +138,9 @@ background-image: url(../ressources/ui/audio-volume-muted.png);
 
 .animemal {
 	position:fixed;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-webkit-user-select: none;
 }
 .animemal img {
 	width: 100%;
