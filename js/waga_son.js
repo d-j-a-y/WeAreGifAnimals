@@ -77,5 +77,6 @@ var sceneSoundBank =     [
       './ressources/son/zoe_limace.mp3'  //74 
       './ressources/son/florent_chaton.mp3',  //75
       './ressources/son/joan_fourmie.mp3',  //76 
+      './ressources/son/jules_raptor.mp3',  //77 
 <!--WAGA_NEW_ANIMEMAL-->
 ];
