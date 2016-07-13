@@ -78,5 +78,7 @@ var sceneSoundBank =     [
       './ressources/son/florent_chaton.mp3',  //75
       './ressources/son/joan_fourmie.mp3',  //76 
       './ressources/son/jules_raptor.mp3',  //77 
+      './ressources/son/squale.mp3',  //78 
+      './ressources/son/charlotte_lapin.mp3',  //79 
 <!--WAGA_NEW_ANIMEMAL-->
 ];
