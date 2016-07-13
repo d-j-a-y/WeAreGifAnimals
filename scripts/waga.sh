@@ -1,5 +1,8 @@
 #!/bin/bash
 
+echo "Outdated : have a look to wagainsert.sh"
+exit 0
+
 helpme()
 {
 	echo ""
