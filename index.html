@@ -3,7 +3,7 @@
 <title>We Are Gifs Animals</title>
 <meta name="generator" content="Bluefish 2.2.6" >
 <meta name="author" content="Jérôme Blanchi @ TML & Xavier Dubourdieu">
-<meta name="date" content="2016-04-13T11:15:43+0200" >
+<meta name="date" content="2016-07-13T11:54:31+0200" >
 <meta name="copyright" content="">
 <meta name="keywords" content="art, reecriture, rewrite, remake, gif, gifs, chat, cat">
 <meta name="description" content="Le bestiaire dans l'Histoire de l'Art, de Jérôme Bosh à We are just animals d'Olaf Breuning, l'animal 
@@ -26,14 +26,15 @@
 </head>
 
 <!-- <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> -->
-<!-- -->
 <body id="fond" style="background-image: url(./ressources/fond/bg_lastation.jpeg)"
-  onload="initAudioApiSupport('./ressources/son/ambianceRUE.mp3',sceneSoundBank)"
->
+  onload="initAudioApiSupport('./ressources/son/ambianceRUE.mp3',sceneSoundBank)" >
 
 <!-- Test script capacities-->
 <script>	</script>
-<noscript>Sorry, your browser does not support JavaScript!</noscript>
+<noscript>
+<p><b>EN : </b>Sorry, your browser does not support JavaScript!</p>
+<p><b>FR : </b>Désolé, votre navigateur ne supporte pas le JavaScript!</p>
+</noscript>
 
 <div id="progress"> 
 		<div id="slider">
@@ -44,16 +45,22 @@
 		</div>
 </div>
 
- <!-- Animals -->
-<!--Voir ./scripts/waga.sh-->
-<!-- * copie colle la classe -->
-<!-- * creation du style associé "nompersonage" ./css/waga_personnage.css -->
-<!-- * La taille du gif est dans ./js/wearegifanimals.js -->
-<!-- * ajout du nouveau SON dans la banque de son et incrementation index ./js/waga_son.js -->
+<!-- HOW TO ADD an Animal ? -->
+<!-- Done using the wagainsert.sh script located in ./scripts/ -->
+<!--	wagainsert.sh --help
+#############################################################################
+### WHATFOR : automate the waga update : generate the css, js and html    ###
+### HOWTO : wagainsert.sh "gifanimals_name" "index"                       ###
+#############################################################################
+-->
+
 
 <!-- IDEE -->
 <!-- index playsound : nom pas chiffre ??? -->
 <!-- Function de creation des zanimaux a partir d'un jolie tableau! -->
+
+<!-- TODO ? Selection des visible par tableau (flags) -->
+
 <!--
 
 Voir : begin js 3rd / 534
@@ -78,8 +85,6 @@ toolbar.appendChild(button);
 document.body.appendChild(animalus);
 }-->
 
-
-<!-- TODO ? Selection des visible par tableau (flags) -->
 
 <!--WAGA_NEW_ANIMEMAL-->
 <div class="resizable draggable animemal zoe_limace" id="" onmouseover="playSound(75);"  onmouseout="stopSound(75);">
