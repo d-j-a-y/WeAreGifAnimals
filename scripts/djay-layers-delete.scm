@@ -2,7 +2,7 @@
 ; The GIMP -- an image manipulation program
 ; Copyright (C) 1995 Spencer Kimball and Peter Mattis
 ;
-; Delete selectivly layers script for GIMP 2.4
+; Delete selectively layers script for GIMP 2.4
 ; Adapted by Jérôme Blanchi (aka d-j-a-y) from "Mass delete layers" script by Daniel Bates
 ;
 ; Tags: public domain, layers, delete, gif
