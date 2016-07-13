@@ -80,5 +80,6 @@ var sceneSoundBank =     [
       './ressources/son/jules_raptor.mp3',  //77 
       './ressources/son/squale.mp3',  //78 
       './ressources/son/charlotte_lapin.mp3',  //79 
+      './ressources/son/raphael_beagle.mp3',  //80 
 <!--WAGA_NEW_ANIMEMAL-->
 ];
