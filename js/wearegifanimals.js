@@ -285,10 +285,53 @@ function changebackground(direction){
 	document.body.style.backgroundImage = "url(" + backgroundBank[currentBackground].url + ")";
 }
 
+
+function imageExists(url, callback) {
+    var img = new Image();
+    var testEnded = false;
+    img.onload = function() {  callback(true); };
+    img.onerror = function() {  callback(false); };
+    img.src = url;
+}
+
+
+// update the background image by an url (external images) before a minimal file type check
+// TODO : test http://stackoverflow.com/questions/18299806/how-to-check-file-mime-type-with-javascript-before-upload/29672957#29672957
+
 function changebackgroundURL(file){
 	// Change the background image
 	//DEBUG
 	//console.log("file : " + file);
+
+	//Check the file type (http://stackoverflow.com/questions/14345755/js-or-jquery-file-type-match-for-jpg-and-png-only)
+	var allowed = ["jpeg", "png", "gif"];
+	var imageFound = false;
+//	var imageExistsTest = false;
+
+	allowed.forEach(function(extension) {
+	  	if (file.type.match('image/'+extension)) {
+	    	imageFound = true;
+	    	
+/*
+	    	//second test : problem how to wait imageExists callback return ?..
+	    	var checkreader = new FileReader();
+	    	checkreader.onload = function (e) {
+	   		imageExists(e.target.result, function(imageFound){
+
+//	   			if (exists) {
+	//            	imageFound = true;
+	  //      		}
+	   		});
+	    	};
+	    	imageExistsTest = true;
+			checkreader.readAsDataURL(file);
+*/
+	  	}
+	})
+
+	//while (imageExistsTest) {} //CPU freeze!
+
+	if(imageFound) {
 	var reader = new FileReader();
 
 	// Closure to capture the file information.
@@ -300,6 +343,9 @@ function changebackgroundURL(file){
 
 	// Read in the image file as a data URL.
 	reader.readAsDataURL(file);
+	}else{
+		alert("oups ... file type doesn't match image : \"jpeg\", \"png\" or \"gif\" ");
+	}
 }
 
 // Update the scene to context client screen
@@ -376,9 +422,10 @@ function resetAnimemalsPosition(){
 
 // toggleSound
 function toggleSound() {
+//TODO ...
 }
 
-// Choose the Animemals to display accordingly to the current scene
+// [NOT USED] Choose the Animemals to display accordingly to the current scene
 function selectAnimemalsByScene(){
 	for (var i = animemalBank.length-1 ; i >= 0 ; i-=1){
 		var animemal = $("."+animemalBank[i].name)[0];
@@ -403,7 +450,8 @@ function getContextSize(sizeToAdjust, unitString) {
 	return (parseInt(sizeToAdjust) * currentFactor)+unitString; 
 }
 
-// Show Animal UI when mouseover
+// Show Animal User Interface (rotate / duplicate / resize) when mouseover
+// parem : e event
 function showUI(e){
 
 	this.style.backgroundColor = "grey";
@@ -416,7 +464,7 @@ function showUI(e){
 	//this.
 }
 
-// Hide Animal UI when mouseout 
+// Hide Animal UI (rotate / duplicate / resize) when mouseout 
 function hideUI(e){
 	
 	this.style.backgroundColor = "";
