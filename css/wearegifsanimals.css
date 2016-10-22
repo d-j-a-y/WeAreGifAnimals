@@ -2,11 +2,16 @@
 /***********************************/
 /* General User Interface for WAGA */
 /***********************************/
+html, body {
+   margin: 0;
+   padding: 0;
+   height: 100%;
+}
+
 body {
-	background-image: url(../ressources/fond/bg_hublot.jpeg);
 	background-repeat:no-repeat;
 	background-position:center center;
-	background-attachment:fixed; 
+/*	background-attachment:fixed; ---- TEST SNAP*/
 	-o-background-size: cover;
 	-moz-background-size: cover;
 	-webkit-background-size: cover;
@@ -60,16 +65,35 @@ height: 40px;
 
 z-index:800;
 }
+
 #cleanscene:hover{
 background-image: url(../ressources/ui/icon-reload_hover.png);
 
+}
+
+#fileoutput{
+  background-image: url(../ressources/ui/icon-load_image.png);
+  background-repeat:no-repeat;
+  transform: rotate(180deg);
+  bottom: 40px;
+  left: 40px;
+  width: 40px;
+  height: 40px;
+	position: fixed;
+
+  z-index:800;
+}
+
+#fileoutput:hover {
+  background-image: url(../ressources/ui/icon-load_image_hover.png);
+  background-repeat:no-repeat;
 }
 
 div.fileinputs {
   background-image: url(../ressources/ui/icon-load_image.png);
   background-repeat:no-repeat;
   bottom: 40px;
-  left: 40px;
+  left: 80px;
   width: 40px;
   height: 40px;
 	position: fixed;

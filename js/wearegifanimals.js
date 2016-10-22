@@ -28,6 +28,7 @@
 /* http://html5css3jscript.com/the-most-simple-progress-bar/                        */
 /************************************************************************************/
 
+
 var FLAG_SCENE_STATION = 1; //00000001
 var FLAG_SCENE_HUBLOT = 2; // 00000010
 var FLAG_SCENE_STROCH = 4; // 00000100
@@ -397,6 +398,27 @@ function cleanScene(){
     $(this).remove();
 	});
 	resetAnimemalsPosition();
+}
+
+// Take a snap shot and save the image to client
+function snapshotScene(){
+	document.getElementById("progress").style.visibility = 'hidden';
+
+	html2canvas(document.body, {
+      onrendered: function(canvas) {
+
+	      if (navigator.userAgent.indexOf("MSIE ") > 0 || 
+						navigator.userAgent.match(/Trident.*rv\:11\./)) {
+	      	var blob = canvas.msToBlob();
+	        window.navigator.msSaveBlob(blob,'Test file.png');
+	      }
+	      else {
+	        $('#snapshot').attr('href', canvas.toDataURL("image/png"));
+	        $('#snapshot').attr('download','Test file.png');
+	        $('#snapshot')[0].click();
+	      }
+      }
+   });
 }
 
 // Reset the positions of all animemal bank . (done first init and from cleanSceme)

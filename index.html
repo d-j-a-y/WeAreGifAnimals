@@ -3,7 +3,7 @@
 <title>We Are Gifs Animals</title>
 <meta name="generator" content="Bluefish 2.2.6" >
 <meta name="author" content="Jérôme Blanchi @ TML & Xavier Dubourdieu">
-<meta name="date" content="2016-10-12T14:09:33+0200" >
+<meta name="date" content="2016-10-22T20:09:46+0200" >
 <meta name="copyright" content="">
 <meta name="keywords" content="art, reecriture, rewrite, remake, gif, gifs, chat, cat">
 <meta name="description" content="Le bestiaire dans l'Histoire de l'Art, de Jérôme Bosh à We are just animals d'Olaf Breuning, l'animal 
@@ -762,12 +762,17 @@ document.body.appendChild(animalus);
 	<!-- FIN GROUPES -->		<!-- FIN GROUPES -->		<!-- FIN GROUPES -->		<!-- FIN GROUPES -->		<!-- FIN GROUPES -->	
 	<!-- UI UI UI UI -->		<!-- UI UI UI UI -->		<!-- UI UI UI UI -->		<!-- UI UI UI UI -->		<!-- UI UI UI UI -->	
 
-<!-- bouton de reinitialisation-->
+<!-- bouton de reinitialisation -->
 <div class="cleanscene uielements" id="cleanscene" onclick="cleanScene()"></div>
 
 <!-- boutons de changement de fond-->	
 <div class="flipbg uielements" id="flipbgdroite" onclick="changebackground(1)"></div>
 <div class="flipbg uielements" id="flipbggauche" onclick="changebackground(-1)"></div>
+
+<!-- bouton de copie d'ecran de la scene-->
+<div class="uielements" id="fileoutput" onclick="snapshotScene()"></div>
+<!-- tricks for having a nice file name in save dialog box -->
+<a id="snapshot"></a>
 
 <!-- bouton d'ajout de fond-->
 <div class="fileinputs uielements">
@@ -1085,9 +1090,13 @@ handler for the load and unload events, you’d write the following
 <script type="text/javascript" src="./js/wearegifanimals.js"></script>
 <!-- Ressources sonores -->
 <script type="text/javascript" src="./js/waga_son.js"></script>
+
 <!-- Gestion des ressources sonores -->
 <script type="text/javascript" src="./js/webaudioapi/audioapi.js"></script>
 <script type="text/javascript" src="./js/webaudioapi/buffer-loader.js"></script>
+<!-- https://github.com/niklasvh/html2canvas/ -->
+<script type="text/javascript" src="./js/html2canvas/html2canvas.js"></script>
+
 
 </body>
 </html>
