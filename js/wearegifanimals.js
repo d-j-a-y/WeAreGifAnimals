@@ -410,11 +410,11 @@ function snapshotScene(){
 	      if (navigator.userAgent.indexOf("MSIE ") > 0 || 
 						navigator.userAgent.match(/Trident.*rv\:11\./)) {
 	      	var blob = canvas.msToBlob();
-	        window.navigator.msSaveBlob(blob,'Test file.png');
+	        window.navigator.msSaveBlob(blob,'wearegifanimals-capture.png');
 	      }
 	      else {
 	        $('#snapshot').attr('href', canvas.toDataURL("image/png"));
-	        $('#snapshot').attr('download','Test file.png');
+	        $('#snapshot').attr('download','wearegifanimals-capture.png');
 	        $('#snapshot')[0].click();
 	      }
       }
