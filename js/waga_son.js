@@ -61,7 +61,7 @@ var sceneSoundBank =     [
       './ressources/son/eliamine_zebre.mp3', //58
       './ressources/son/achille_mantre_religieuse.mp3', //59
       './ressources/son/hatim_koala.mp3', //60
-      './ressources/son/herve_elephant.mp3', //61      
+      './ressources/son/herve_elephant.mp3', //61
       './ressources/son/kevin_cerf.mp3', //62
       './ressources/son/rayan_scorpion.mp3', //63
       './ressources/son/anais_CHOUETTE.mp3',  //64 
@@ -74,7 +74,7 @@ var sceneSoundBank =     [
       './ressources/son/arno_alligatore.mp3',  //71 
       './ressources/son/jerome_suricate.mp3',  //72 
       './ressources/son/tom_ornithorynque.mp3',  //73 
-      './ressources/son/zoe_limace.mp3'  //74 
+      './ressources/son/zoe_limace.mp3',  //74
       './ressources/son/florent_chaton.mp3',  //75
       './ressources/son/joan_fourmie.mp3',  //76 
       './ressources/son/jules_raptor.mp3',  //77 
