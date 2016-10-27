@@ -1,0 +1,29 @@
+
+  convert -delay 200  -size 220x220 xc:Red \
+          -page +62+10 animation2.gif   -page +10+55 animation.gif  \
+          -loop 0  animation3.gif
+
+
+
+convert -size 1024x576  xc:none \
+	1.gif -coalesce null: \( 2.gif -coalesce \) \( 3.gif -coalesce \)  \
+   -gravity Center -geometry +0+80 -layers composite \
+   -set delay 10  -loop 0 -layers optimize c.gif
+
+
+convert  -size 1024x576 xc:none \
+   1.gif -coalesce  null: \
+    2.gif -coalesce  null: \
+   \( 3.gif -coalesce  \) \
+   -gravity Center -geometry +0+80 -layers composite \
+   -set delay 10 -loop 0 -layers optimize z.gif
+
+
+#Combine anim1.gif and anim2.gif (first row)
+convert -size 1024x576 xc:none 1.gif -coalesce null: \( 2.gif -coalesce \) -geometry +100+0 -layers Composite 12.gif
+#Combine anim3.gif and anim4.gif (1st part of last row)
+convert 12.gif -coalesce null: \( 3.gif -coalesce \) -geometry +100+0 -layers Composite 123.gif
+#Combine anim3+4.gif and anim5.gif (last row)
+convert 123.gif  -coalesce null: \( 4.gif -coalesce \) -geometry +200+0 -layers Composite 1234.gif
+#Combine all, leaving one in the middle empty
+convert 1234.gif -coalesce null: \( 5.gif -coalesce \) -geometry +0+200 -layers Composite anim_all.gif
