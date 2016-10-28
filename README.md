@@ -5,6 +5,9 @@ __(en)__ Interactive gif picture. Collaborative and creative work from child wor
 
 Tableau interactif de gif. Création collaborative issue d'une série d'ateliers d'enfants.
 
+* [http://transmission-libre.org/WeAreGifAnimals](http://transmission-libre.org/WeAreGifAnimals) (stable release)
+* [https://d-j-a-y.github.io/](https://d-j-a-y.github.io/) (preview release)
+
 __WE ARE GIF ANIMALS__, propose de se réapproprier la pièce d'[__Olaf Breuning__](https://en.wikipedia.org/wiki/Olaf_Breuning) [We are just animals](http://olafbreuningphoto.tumblr.com/post/22454770569/2005-we-are-just-animals-c-print-120-x-150-cm) pour en proposer une version interactive visible sur un site web et en réalité augmentée dans l'espace public le __1 Juin 2016 place Garibaldi à Nice__.
 
 ![WeAreGifAnimals (at) La Station](/README_files/Waga_LaStation.jpg)
@@ -30,5 +33,12 @@ et de l'écart entre l'original et ses simulacres. Mais si la logique de la diss
 du global, du sujet et de la tribu, elle ouvre aussi un espace de liberté, un lieu pour se
 perdre et pour se retrouver, un "chemin qui ne mène nulle part" si ce n’est peut-être à soi.
 
-* [http://transmission-libre.org/WeAreGifAnimals](http://transmission-libre.org/WeAreGifAnimals) (stable release)
-* [https://d-j-a-y.github.io/](https://d-j-a-y.github.io/) (preview release)
+
+## Code credit
+Copyright (c) 2012-2016 Jerome Blanchi aka d.j.a.y <http://github.com/d-j-a-y> - Release under [Gnu/GPL](LICENCE) Licence.
+* audioapi :
+Mainly inspired from <http://www.html5rocks.com/en/tutorials/webaudio/intro/> by Boris Smus
+
+* html2canvas : (0.5.0-beta3) <http://html2canvas.hertzen.com></br>
+  Copyright (c) 2016 Niklas von Hertzen</br>
+  Released under MIT License

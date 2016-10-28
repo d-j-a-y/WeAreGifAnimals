@@ -1,4 +1,5 @@
 #!/bin/bash
+#160413
 
 ##TODO resize % has option
 ##TODO adjust rythm has option
