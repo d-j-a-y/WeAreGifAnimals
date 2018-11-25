@@ -1,9 +1,9 @@
 # We Are Gif Animals
 ##### <center>AlsoKnowAs WAGA</center>
 
-__(en)__ Interactive gif picture. Collaborative and creative work from child workshops.
+__(en)__ Interactive gif picture. Collaborative and creative work from child workshops. Idea and leading Xavier Dubourdieu.
 
-Tableau interactif de gif. Création collaborative issue d'une série d'ateliers d'enfants.
+Tableau interactif de gif. Création collaborative issue d'une série d'ateliers d'enfants pensé et coordoné par Xavier Dubourdieu.
 
 * [http://transmission-libre.org/WeAreGifAnimals](http://transmission-libre.org/WeAreGifAnimals) (stable release)
 * [https://d-j-a-y.github.io/](https://d-j-a-y.github.io/) (preview release)
